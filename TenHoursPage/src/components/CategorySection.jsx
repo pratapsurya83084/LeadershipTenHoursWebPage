@@ -54,7 +54,7 @@ const CategorySection = () => {
                   />
                 </div>
                 <div className="flex justify-center mt-2">
-                  <p className="text-center">
+                  <p className="text-center overflow-hidden ">
                   Forge Team Trust with Expert Decision-Making: <br />
                    Strengthen team cohesion and <br />
                     trust through informed decision-making
@@ -71,7 +71,7 @@ const CategorySection = () => {
                   />
                 </div>
                 <div className="flex justify-center mt-2">
-                  <p className="text-center whitespace-nowrap">
+                  <p className="text-center overflow-hidden whitespace-nowrap">
                     Elevate Productivity Through <br />
                      Communication: Spark team motivation <br /> and positivity with adept communication
                   </p>
@@ -92,7 +92,7 @@ const CategorySection = () => {
                   />
                 </div>
                 <div className="flex justify-center mt-2">
-                  <p className="text-center">
+                  <p className="text-center overflow-hidden">
                     Surmount Challenges, Secure Success: Tackle leadership hurdles with enduring strategies
                   </p>
                 </div>
@@ -107,7 +107,7 @@ const CategorySection = () => {
                   />
                 </div>
                 <div className="flex justify-center mt-2">
-                  <p className="text-center">
+                  <p className="text-center overflow-hidden">
                     Harness Leadership Potential: Channel your potential for influential guidance
                   </p>
                 </div>
@@ -127,7 +127,7 @@ const CategorySection = () => {
                   />
                 </div>
                 <div className="flex justify-center mt-2">
-                  <p className="text-center">
+                  <p className="text-center overflow-hidden">
                     Conflict Resolution and Negotiation: Share strategies for managing conflict constructively and promoting a positive team environment
                   </p>
                 </div>
@@ -142,7 +142,7 @@ const CategorySection = () => {
                   />
                 </div>
                 <div className="flex justify-center mt-2">
-                  <p className="text-center">
+                  <p className="text-center overflow-hidden">
                     Elevate Productivity Through Communication: Spark team motivation and positivity with adept communication
                   </p>
                 </div>
@@ -177,7 +177,7 @@ const CategorySection = () => {
                   />
                 </div>
                 <div className="flex justify-center mt-2">
-                  <p className="text-center whitespace-nowrap">
+                  <p className="text-center overflow-hidden whitespace-nowrap">
                    Navigating High-Stakes  <br />
                      Decisions: Building Trust 
                       within Cross <br /> Functional Teams

@@ -6,6 +6,9 @@ import SingleVidioSection  from '../components/SingleVidioSection'
 import InspiringFeedback   from '../components/InspiringFeedback'
 import RevenuePicture  from '../components/RevenuePicture'
 import CategorySection  from '../components/CategorySection'
+import FourAdditionPicture  from '../components/FourAdditionPicture'
+import Vidios from '../components/Vidios'
+import ScreenshotPicture  from '../components/ScreenshotPicture'
 const Home = () => {
   return (
     <div>
@@ -16,6 +19,9 @@ const Home = () => {
     <InspiringFeedback/>
     <RevenuePicture/>
     <CategorySection/>
+    <FourAdditionPicture/>
+    <Vidios/>
+    <ScreenshotPicture/>
     </div>
   )
 }
