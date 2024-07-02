@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { CheckIcon } from "@heroicons/react/24/solid";
 
 const CategorySection = () => {
   const settings = {
@@ -19,7 +20,8 @@ const CategorySection = () => {
   return (
     <div className="">
       <h1 className="carousel-section text-center mt-10 p-4 text-2xl font-bold">
-        Select from a diverse range of 200+ skill sets across 5 selective categories,
+        Select from a diverse range of 200+ skill sets across 5 selective
+        categories,
         <br />
         out of 20+ different categories, offering the following advantages
         <div className="flex justify-center mb-4">
@@ -47,36 +49,42 @@ const CategorySection = () => {
             <div className="md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
               <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow">
                 <div className="flex justify-center">
-                {/* <img
+                  {/* <img
                     className="h-72 w- object-cover"
                     src="https://course.bishopadhikari.com/images/New%20Forge%20Team%20Trust%20with%20Expert%20Decision-Making.png"
                     alt="Slide 7"
                   /> */}
                 </div>
                 <div className="flex justify-center mt-2">
+                  <div className="text-white mt-2 p- h-6 w-6 flex justify-center">
+                    <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
+                  </div>
                   <p className="text-center overflow-hidden ">
-                  Forge Team Trust with Expert Decision-Making: <br />
-                   Strengthen team cohesion and <br />
+                    Forge Team Trust with Expert Decision-Making: <br />
+                    Strengthen team cohesion and <br />
                     trust through informed decision-making
                   </p>
                 </div>
               </div>
 
               <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow">
-                <div className="flex justify-center">
-                  {/* <img
+                {/* <div className="flex justify-center"> */}
+                {/* <img
                     className="h-72 w- object-cover"
                     src="https://course.bishopadhikari.com/images/NEW%20Guiding%20Your%20Journey%20to%20Exceptional%20Leadership.png"
                     alt="Slide 2"
                   /> */}
-                </div>
+                {/* </div> */}
                 <div className="flex justify-center mt-2">
+                  <div className="text-white mt-2 h-6 w-6 flex justify-center">
+                    <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
+                  </div>
                   <p className="text-center overflow-hidden ">
-                    Elevate Productivity Through 
+                    Elevate Productivity Through
                     {/* <br /> */}
-                     Communication: Spark team motivation 
-                     <br />
-                      and positivity with adept communication
+                    Communication: Spark team motivation
+                    <br />
+                    and positivity with adept communication
                   </p>
                 </div>
               </div>
@@ -87,35 +95,43 @@ const CategorySection = () => {
           <div className="p-2">
             <div className="md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
               <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow">
-                <div className="flex justify-center">
-                  {/* <img
+                {/* <div className="flex justify-center"> */}
+                {/* <p className="text-center overflow-hidden">
+                    Surmount Challenges, Secure Success: Tackle <br />
+                     leadership hurdles with enduring strategies
+                  </p> */}
+                {/* <img
                     className="h-72 w- object-cover"
                     src="https://course.bishopadhikari.com/images/New%20Surmount%20Challenges,%20Secure%20Success.png"
                     alt="Slide 3"
                   /> */}
-                </div>
+                {/* </div> */}
                 <div className="flex justify-center mt-2">
+                  <div className="text-white mt-2 h-6 w-6 flex justify-center">
+                    <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
+                  </div>
                   <p className="text-center overflow-hidden">
                     Surmount Challenges, Secure Success: Tackle <br />
-                     leadership hurdles with enduring strategies
+                    leadership hurdles with enduring strategies
                   </p>
                 </div>
               </div>
 
               <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow">
-                <div className="flex justify-center">
+                {/* <div className="flex justify-center"> */}
                   {/* <img
                     className="h-72 w- object-cover"
                     src="https://course.bishopadhikari.com/images/NewHarness%20Leadership%20Potential.png"
                     alt="Slide 4"
                   /> */}
-                </div>
+                {/* </div> */}
                 <div className="flex justify-center mt-2">
+                  <div className="text-white mt-2 h-6 w-6 flex justify-center">
+                    <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
+                  </div>
                   <p className="text-center overflow-hidden">
-                    Harness Leadership Potential: Channel your <br /> 
-                    potential  for influential guidance
-
-
+                    Harness Leadership Potential: Channel your <br />
+                    potential for influential guidance
                   </p>
                 </div>
               </div>
@@ -126,34 +142,40 @@ const CategorySection = () => {
           <div className="p-2">
             <div className="md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
               <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow">
-                <div className="flex justify-center">
-                  {/* <img
+                {/* <div className="flex justify-center"> */}
+                {/* <img
                     className="h-72 w- object-cover"
                     src="https://course.bishopadhikari.com/images/NEW%20Conflict%20Resolution%20and%20Negotiation.png"
                     alt="Slide 5"
                   /> */}
-                </div>
+                {/* </div> */}
                 <div className="flex justify-center mt-2">
+                  <div className="text-white mt-2 h-6 w-6 flex justify-center">
+                    <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
+                  </div>
                   <p className="text-center overflow-hidden">
                     Conflict Resolution and Negotiation: Share <br />
-                     strategies for managing conflict <br />
-                     constructively and promoting a positive team environment
+                    strategies for managing conflict <br />
+                    constructively and promoting a positive team environment
                   </p>
                 </div>
               </div>
 
               <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow">
-                <div className="flex justify-center">
+                {/* <div className="flex justify-center"> */}
                   {/* <img
                     className="h-72 w- object-cover"
                     src="https://course.bishopadhikari.com/images/NEW%20Elevate%20Productivity%20Through%20Communication.png"
                     alt="Slide 6"
                   /> */}
-                </div>
+                {/* </div> */}
                 <div className="flex justify-center mt-2">
+                  <div className="text-white h-6 w-6 mt-2 flex justify-center">
+                    <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
+                  </div>
                   <p className="text-center overflow-hidden">
-                    Elevate Productivity Through Communication: Spark <br /> 
-                    team motivation  and positivity with adept communication
+                    Elevate Productivity Through Communication: Spark <br />
+                    team motivation and positivity with adept communication
                   </p>
                 </div>
               </div>
