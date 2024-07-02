@@ -2,7 +2,8 @@ import React from "react";
 
 const TenHouresSection = () => {
   return (
-    <section className="bg-custom-brown ">
+    // bg-custom-brown
+    <section className=" ">
       <h1 className="text-center text-xl font-bold p-4 ">
         Embark on a life-changing
         <strong className="font-bold text-yellow-200 px-2">10 hours</strong>

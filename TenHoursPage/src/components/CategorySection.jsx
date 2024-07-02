@@ -45,13 +45,13 @@ const CategorySection = () => {
           {/* First slide */}
           <div className="p-2">
             <div className="md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
-              <div className="flex-col bg-custom-gray p-4">
+              <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow">
                 <div className="flex justify-center">
-                <img
+                {/* <img
                     className="h-72 w- object-cover"
                     src="https://course.bishopadhikari.com/images/New%20Forge%20Team%20Trust%20with%20Expert%20Decision-Making.png"
                     alt="Slide 7"
-                  />
+                  /> */}
                 </div>
                 <div className="flex justify-center mt-2">
                   <p className="text-center overflow-hidden ">
@@ -62,18 +62,21 @@ const CategorySection = () => {
                 </div>
               </div>
 
-              <div className="flex-col bg-custom-gray p-4">
+              <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow">
                 <div className="flex justify-center">
-                  <img
+                  {/* <img
                     className="h-72 w- object-cover"
                     src="https://course.bishopadhikari.com/images/NEW%20Guiding%20Your%20Journey%20to%20Exceptional%20Leadership.png"
                     alt="Slide 2"
-                  />
+                  /> */}
                 </div>
                 <div className="flex justify-center mt-2">
-                  <p className="text-center overflow-hidden whitespace-nowrap">
-                    Elevate Productivity Through <br />
-                     Communication: Spark team motivation <br /> and positivity with adept communication
+                  <p className="text-center overflow-hidden ">
+                    Elevate Productivity Through 
+                    {/* <br /> */}
+                     Communication: Spark team motivation 
+                     <br />
+                      and positivity with adept communication
                   </p>
                 </div>
               </div>
@@ -83,32 +86,36 @@ const CategorySection = () => {
           {/* Second slide */}
           <div className="p-2">
             <div className="md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
-              <div className="flex-col bg-custom-gray p-4">
+              <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow">
                 <div className="flex justify-center">
-                  <img
+                  {/* <img
                     className="h-72 w- object-cover"
                     src="https://course.bishopadhikari.com/images/New%20Surmount%20Challenges,%20Secure%20Success.png"
                     alt="Slide 3"
-                  />
+                  /> */}
                 </div>
                 <div className="flex justify-center mt-2">
                   <p className="text-center overflow-hidden">
-                    Surmount Challenges, Secure Success: Tackle leadership hurdles with enduring strategies
+                    Surmount Challenges, Secure Success: Tackle <br />
+                     leadership hurdles with enduring strategies
                   </p>
                 </div>
               </div>
 
-              <div className="flex-col bg-custom-gray p-4">
+              <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow">
                 <div className="flex justify-center">
-                  <img
+                  {/* <img
                     className="h-72 w- object-cover"
                     src="https://course.bishopadhikari.com/images/NewHarness%20Leadership%20Potential.png"
                     alt="Slide 4"
-                  />
+                  /> */}
                 </div>
                 <div className="flex justify-center mt-2">
                   <p className="text-center overflow-hidden">
-                    Harness Leadership Potential: Channel your potential for influential guidance
+                    Harness Leadership Potential: Channel your <br /> 
+                    potential  for influential guidance
+
+
                   </p>
                 </div>
               </div>
@@ -118,32 +125,35 @@ const CategorySection = () => {
           {/* Third slide */}
           <div className="p-2">
             <div className="md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
-              <div className="flex-col bg-custom-gray p-4">
+              <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow">
                 <div className="flex justify-center">
-                  <img
+                  {/* <img
                     className="h-72 w- object-cover"
                     src="https://course.bishopadhikari.com/images/NEW%20Conflict%20Resolution%20and%20Negotiation.png"
                     alt="Slide 5"
-                  />
+                  /> */}
                 </div>
                 <div className="flex justify-center mt-2">
                   <p className="text-center overflow-hidden">
-                    Conflict Resolution and Negotiation: Share strategies for managing conflict constructively and promoting a positive team environment
+                    Conflict Resolution and Negotiation: Share <br />
+                     strategies for managing conflict <br />
+                     constructively and promoting a positive team environment
                   </p>
                 </div>
               </div>
 
-              <div className="flex-col bg-custom-gray p-4">
+              <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow">
                 <div className="flex justify-center">
-                  <img
+                  {/* <img
                     className="h-72 w- object-cover"
                     src="https://course.bishopadhikari.com/images/NEW%20Elevate%20Productivity%20Through%20Communication.png"
                     alt="Slide 6"
-                  />
+                  /> */}
                 </div>
                 <div className="flex justify-center mt-2">
                   <p className="text-center overflow-hidden">
-                    Elevate Productivity Through Communication: Spark team motivation and positivity with adept communication
+                    Elevate Productivity Through Communication: Spark <br /> 
+                    team motivation  and positivity with adept communication
                   </p>
                 </div>
               </div>
@@ -177,7 +187,7 @@ const CategorySection = () => {
                   />
                 </div>
                 <div className="flex justify-center mt-2">
-                  <p className="text-center overflow-hidden whitespace-nowrap">
+                  <p className="text-center overflow-hidden ">
                    Navigating High-Stakes  <br />
                      Decisions: Building Trust 
                       within Cross <br /> Functional Teams

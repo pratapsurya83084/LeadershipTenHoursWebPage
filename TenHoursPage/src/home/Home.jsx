@@ -9,6 +9,7 @@ import CategorySection  from '../components/CategorySection'
 import FourAdditionPicture  from '../components/FourAdditionPicture'
 import Vidios from '../components/Vidios'
 import ScreenshotPicture  from '../components/ScreenshotPicture'
+import SingleVidio  from '../components/SingleVidio'
 const Home = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ const Home = () => {
     <SingleVidioSection/>
     <InspiringFeedback/>
     <RevenuePicture/>
+    <SingleVidio/>
     <CategorySection/>
     <FourAdditionPicture/>
     <Vidios/>
