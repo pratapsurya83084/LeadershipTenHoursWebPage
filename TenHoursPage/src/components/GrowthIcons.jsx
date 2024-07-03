@@ -48,7 +48,7 @@ const GrowthIcons = () => {
       src="/group_7872032.png" 
       alt="growth icon 1" 
     />
-    <p className='text-center'>Discover the secrets of effective leadership</p>
+    <p className='text-center px-7'>Discover the secrets of effective leadership  </p>
   </div>
   
   <div className='flex flex-col items-center p-5 border-2 border-yellow-500 rounded-lg'>
