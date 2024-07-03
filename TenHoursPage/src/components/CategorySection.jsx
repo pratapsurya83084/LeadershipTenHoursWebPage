@@ -42,184 +42,99 @@ const CategorySection = () => {
         </div>
       </h1>
 
-      <div className="image-carousel-section flex justify-center items-center w-full radius-yellow p-4 rounded-3xl bg-custom-brown">
-        <Slider {...settings} className="flex p-2 w-full">
-          {/* First slide */}
-          <div className="p-2">
-            <div className="md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
-              <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow">
-                <div className="flex justify-center">
-                  {/* <img
-                    className="h-72 w- object-cover"
-                    src="https://course.bishopadhikari.com/images/New%20Forge%20Team%20Trust%20with%20Expert%20Decision-Making.png"
-                    alt="Slide 7"
-                  /> */}
-                </div>
-                <div className="flex justify-center mt-2">
-                  <div className="text-white mt-2 p- h-6 w-6 flex justify-center">
-                    <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
-                  </div>
-                  <p className="text-center overflow-hidden ">
-                    Forge Team Trust with Expert Decision-Making: <br />
-                    Strengthen team cohesion and <br />
-                    trust through informed decision-making
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow">
-                {/* <div className="flex justify-center"> */}
-                {/* <img
-                    className="h-72 w- object-cover"
-                    src="https://course.bishopadhikari.com/images/NEW%20Guiding%20Your%20Journey%20to%20Exceptional%20Leadership.png"
-                    alt="Slide 2"
-                  /> */}
-                {/* </div> */}
-                <div className="flex justify-center mt-2">
-                  <div className="text-white mt-2 h-6 w-6 flex justify-center">
-                    <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
-                  </div>
-                  <p className="text-center overflow-hidden ">
-                    Elevate Productivity Through
-                    {/* <br /> */}
-                    Communication: Spark team motivation
-                    <br />
-                    and positivity with adept communication
-                  </p>
-                </div>
-              </div>
+      <div className="image-carousel-section flex justify-center items-center w-full p-4 rounded-3xl bg-custom-brown">
+  <Slider {...settings} className="flex p-2 w-full">
+    {/* First slide */}
+    <div className="p-2">
+      <div className="md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
+        <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow h-40">
+          <div className="flex justify-center items-center mt-2">
+            <div className="text-white mx-2 mt-2 h-6 w-6 flex justify-center items-center">
+              <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
             </div>
+            <p className="text-center overflow-hidden ml-2 pt-2">
+              Forge Team Trust with Expert Decision-Making :<br /> 
+              Strengthen team cohesion  <br /> and  trust through 
+                informed  decision-making
+            </p>
           </div>
+        </div>
 
-          {/* Second slide */}
-          <div className="p-2">
-            <div className="md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
-              <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow">
-                {/* <div className="flex justify-center"> */}
-                {/* <p className="text-center overflow-hidden">
-                    Surmount Challenges, Secure Success: Tackle <br />
-                     leadership hurdles with enduring strategies
-                  </p> */}
-                {/* <img
-                    className="h-72 w- object-cover"
-                    src="https://course.bishopadhikari.com/images/New%20Surmount%20Challenges,%20Secure%20Success.png"
-                    alt="Slide 3"
-                  /> */}
-                {/* </div> */}
-                <div className="flex justify-center mt-2">
-                  <div className="text-white mt-2 h-6 w-6 flex justify-center">
-                    <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
-                  </div>
-                  <p className="text-center overflow-hidden">
-                    Surmount Challenges, Secure Success: Tackle <br />
-                    leadership hurdles with enduring strategies
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow">
-                {/* <div className="flex justify-center"> */}
-                  {/* <img
-                    className="h-72 w- object-cover"
-                    src="https://course.bishopadhikari.com/images/NewHarness%20Leadership%20Potential.png"
-                    alt="Slide 4"
-                  /> */}
-                {/* </div> */}
-                <div className="flex justify-center mt-2">
-                  <div className="text-white mt-2 h-6 w-6 flex justify-center">
-                    <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
-                  </div>
-                  <p className="text-center overflow-hidden">
-                    Harness Leadership Potential: Channel your <br />
-                    potential for influential guidance
-                  </p>
-                </div>
-              </div>
+        <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow h-40">
+          <div className="flex justify-center items-center mt-2">
+            <div className="text-white mx-2 mt-2 h-6 w-6 flex justify-center items-center">
+              <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
             </div>
+            <p className="text-center overflow-hidden ml-2 pt-3">
+              Navigating High-Stakes Decisions : Trust within <br />
+              Cross-Functional Teams
+            </p>
           </div>
-
-          {/* Third slide */}
-          <div className="p-2">
-            <div className="md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
-              <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow">
-                {/* <div className="flex justify-center"> */}
-                {/* <img
-                    className="h-72 w- object-cover"
-                    src="https://course.bishopadhikari.com/images/NEW%20Conflict%20Resolution%20and%20Negotiation.png"
-                    alt="Slide 5"
-                  /> */}
-                {/* </div> */}
-                <div className="flex justify-center mt-2">
-                  <div className="text-white mt-2 h-6 w-6 flex justify-center">
-                    <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
-                  </div>
-                  <p className="text-center overflow-hidden">
-                    Conflict Resolution and Negotiation: Share <br />
-                    strategies for managing conflict <br />
-                    constructively and promoting a positive team environment
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow">
-                {/* <div className="flex justify-center"> */}
-                  {/* <img
-                    className="h-72 w- object-cover"
-                    src="https://course.bishopadhikari.com/images/NEW%20Elevate%20Productivity%20Through%20Communication.png"
-                    alt="Slide 6"
-                  /> */}
-                {/* </div> */}
-                <div className="flex justify-center mt-2">
-                  <div className="text-white h-6 w-6 mt-2 flex justify-center">
-                    <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
-                  </div>
-                  <p className="text-center overflow-hidden">
-                    Elevate Productivity Through Communication: Spark <br />
-                    team motivation and positivity with adept communication
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Fourth slide */}
-          {/* <div className="p-2">
-            <div className="md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
-              <div className="flex-col bg-custom-gray p-4">
-                <div className="flex justify-center">
-                  <img
-                    className="h-72 w- object-cover"
-                    src="https://course.bishopadhikari.com/images/New%20Forge%20Team%20Trust%20with%20Expert%20Decision-Making.png"
-                    alt="Slide 7"
-                  />
-                </div>
-                <div className="flex justify-center mt-2">
-                  <p className="text-center">
-                    Forge Team Trust with Expert Decision-Making: Strengthen team cohesion and trust through informed decision-making
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex-col bg-custom-gray p-4">
-                <div className="flex justify-center">
-                  <img
-                    className="h-72 w- object-cover"
-                    src="https://course.bishopadhikari.com/images/NEW%20Guiding%20Your%20Journey%20to%20Exceptional%20Leadership.png"
-                    alt="Slide 8"
-                  />
-                </div>
-                <div className="flex justify-center mt-2">
-                  <p className="text-center overflow-hidden ">
-                   Navigating High-Stakes  <br />
-                     Decisions: Building Trust 
-                      within Cross <br /> Functional Teams
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div> */}
-        </Slider>
+        </div>
       </div>
+    </div>
+
+    {/* Second slide */}
+    <div className="p-2">
+      <div className="md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
+        <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow h-40">
+          <div className="flex justify-center items-center mt-2">
+            <div className="text-white mx-2 mt-2 h-6 w-6 flex justify-center items-center">
+              <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
+            </div>
+            <p className="text-center overflow-hidden ml-2 pt-5">
+              Surmount Challenges, Secure Success : Tackle <br />
+              leadership hurdles with enduring strategies
+            </p>
+          </div>
+        </div>
+
+        <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow h-40">
+          <div className="flex justify-center items-center mt-2">
+            <div className="text-white mx-2 mt-2 h-6 w-6 flex justify-center items-center">
+              <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
+            </div>
+            <p className="text-center overflow-hidden ml-2 pt-5">
+              Harness Leadership Potential: Channel your <br />
+              potential for influential guidance
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* Third slide */}
+    <div className="p-2">
+      <div className="md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
+        <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow h-40">
+          <div className="flex justify-center items-center mt-2">
+            <div className="text-white mx-2 mt-2 h-6 w-6 flex justify-center items-center">
+              <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
+            </div>
+            <p className="text-center overflow-hidden ml-2 pt-3">
+              Conflict Resolution and Negotiation: Share <br />
+              strategies for managing conflict <br />
+              constructively and promoting a positive team environment
+            </p>
+          </div>
+        </div>
+
+        <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow h-40">
+          <div className="flex justify-center items-center mt-2">
+            <div className="text-white mx-2 h-6 w-6 mt-2 flex justify-center items-center">
+              <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
+            </div>
+            <p className="text-center overflow-hidden ml-2 pt-3">
+              Elevate Productivity Through Communication: Spark <br />
+              team motivation and positivity with adept communication
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </Slider>
+</div>
+
     </div>
   );
 };
