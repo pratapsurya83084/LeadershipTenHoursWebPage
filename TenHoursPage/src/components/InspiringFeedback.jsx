@@ -3,7 +3,6 @@ import React ,{useEffect,useRef} from "react";
 const InspiringFeedback = () => {
 
   const sectionRef = useRef(null);
-
   useEffect(() => {
     const section = sectionRef.current;
     const observerOptions = {
@@ -35,7 +34,8 @@ const InspiringFeedback = () => {
 
   return (
     <div>
-      <section ref={sectionRef}
+      <section 
+      ref={sectionRef}
        className="mt-10 bg-custom-brown radius-yellow rounded-3xl body-font">
        <h1 className="smooth-scroll mt-4 text-center text-2xl sm:text-3xl font-bold mb-0">Inspiring Feedback</h1>
       <div className="smooth-scroll flex justify-center mb-4">

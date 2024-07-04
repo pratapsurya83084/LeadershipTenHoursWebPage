@@ -33,7 +33,8 @@ const CompanyPicture = () => {
 
   
   return (
-    <section ref={sectionRef}>
+    <section ref={sectionRef}
+    >
     <div className="smooth-scroll mb-  bg-custom-brown radius-yellow rounded-3xl">
       <div className="smooth-scroll p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 md:flex-row gap-5">
         <img

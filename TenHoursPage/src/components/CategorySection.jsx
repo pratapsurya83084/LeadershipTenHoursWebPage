@@ -8,7 +8,6 @@ const CategorySection = () => {
 
 
   const sectionRef = useRef(null);
-
   useEffect(() => {
     const section = sectionRef.current;
     const observerOptions = {
@@ -50,7 +49,8 @@ const CategorySection = () => {
   };
 
   return (
-    <section  ref={sectionRef}>
+    <section  ref={sectionRef}
+    >
       <h1 className="smooth-scroll carousel-section text-center mt-10 p-4 text-xl  md:text-2xl lg:text-3xl font-bold">
         Select from a diverse range of 200+ skill sets across 5 selective
         categories,

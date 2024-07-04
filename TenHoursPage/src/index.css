@@ -70,27 +70,7 @@ body{
 
 /* scrolling effect y-axis */
 
-/* Add this to your CSS file, or in a <style> tag in your component if using styled-components */
-/* .smooth-scroll {
-  animation: scrollEffect 1.5s ease-out;
-}
 
-@keyframes scrollEffect {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-    -webkit-transform: translateY(20px);
-    -moz-transform: translateY(20px);
-    -ms-transform: translateY(20px);
-    -o-transform: translateY(20px);
-}
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-} */
-
-/* Add this to your CSS file */
 .smooth-scroll {
   opacity: 0;
   transform: translateY(20px);
