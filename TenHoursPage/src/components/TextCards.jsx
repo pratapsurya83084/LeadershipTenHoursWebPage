@@ -1,9 +1,42 @@
-import React from "react";
+import React ,{useEffect,useRef}  from "react";
 
 const TextCards = () => {
+
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1,
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-scroll');
+        } else {
+          entry.target.classList.remove('animate-scroll');
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const elements = section.querySelectorAll('.smooth-scroll');
+    elements.forEach(el => observer.observe(el));
+
+    return () => {
+      elements.forEach(el => observer.unobserve(el));
+    };
+  }, []);
+
+
   return (
-    <div>
-      <h1 className="text-xl md:text-2xl lg:text-3xl font-bold text-center mt-10 px-4">
+    <section 
+    ref={sectionRef}
+    >
+      <h1 className="smooth-scroll text-xl md:text-2xl lg:text-3xl font-bold text-center mt-10 px-4">
         Mr. Bishop Adhikari is a dynamic and multifaceted individual,excelling
         in various fields.He is an entrepreneur,social activist and a prominent
         figure in the realm of leadership and management. With a passion for
@@ -13,7 +46,7 @@ const TextCards = () => {
       {/* radius-yellow */}
       <div className="gap-10 mt-10 py-8 px-5  grid mb-8   rounded-lg shadow-sm md:mb-12 md:grid-cols-2 lg:grid-cols-3  bg-custom-brown">
         {/* cards1 */}
-        <figure className="m-5 flex flex-col items-center justify-center p-2 text-center radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
+        <figure className="smooth-scroll m-5 flex flex-col items-center justify-center p-2 text-center radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
           <blockquote className="max-w-2xl mx-auto mb-4 lg:mb-8 flex flex-col items-center">
             {/* icon */}
             <img
@@ -36,7 +69,7 @@ const TextCards = () => {
 
     
         {/* cards2 */}
-        <figure className="m-5 flex flex-col items-center justify-center p-8 text-center radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
+        <figure className="  smooth-scroll m-5 flex flex-col items-center justify-center p-8 text-center radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
           <blockquote className="max-w-2xl mx-auto mb-4 lg:mb-8 flex flex-col items-center">
             <img
               className="h-10 mb-2 bg-yellow-400 rounded-full"
@@ -59,7 +92,7 @@ const TextCards = () => {
         </figure>
 
         {/* cards3 */}
-        <figure className="m-5 flex flex-col items-center  justify-center p-8 text-center  radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
+        <figure className="smooth-scroll m-5 flex flex-col items-center  justify-center p-8 text-center  radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
           <blockquote className="max-w-2xl mx-auto mb-4  lg:mb-8 flex flex-col items-center">
             <img
               className="h-10 mb-2"
@@ -80,7 +113,7 @@ const TextCards = () => {
         </figure>
 
         {/* card4 */}
-        <figure className="m-5 flex flex-col items-center  justify-center p-8 text-center  radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
+        <figure className="smooth-scroll m-5 flex flex-col items-center  justify-center p-8 text-center  radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
           <blockquote className="max-w-2xl mx-auto mb-4  lg:mb-8 flex flex-col items-center ">
             <img className="h-10 mb-2" src="\stakeholder_7740876.png" alt="" />
             <h3 className="text-lg font-semibold  text-yellow-200">
@@ -97,7 +130,7 @@ const TextCards = () => {
         </figure>
 
         {/* card5 */}
-        <figure className="m-5 flex flex-col items-center  justify-center p-8 text-center  radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
+        <figure className="smooth-scroll m-5 flex flex-col items-center  justify-center p-8 text-center  radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
           <blockquote className="max-w-2xl mx-auto mb-4  lg:mb-8 flex flex-col items-center ">
             <img
               className="h-10 mb-2"
@@ -117,7 +150,7 @@ const TextCards = () => {
         </figure>
 
         {/* card6 */}
-        <figure className=" m-5 flex flex-col items-center  justify-center p-8 text-center  radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
+        <figure className="smooth-scroll m-5 flex flex-col items-center  justify-center p-8 text-center  radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
           <blockquote className="max-w-2xl mx-auto mb-4  lg:mb-8 flex flex-col items-center">
             <img className="h-10 mb-2 bg-yellow-400 rounded-full p-1"
              src="\signpost_13452511.png" alt="" />
@@ -133,7 +166,7 @@ const TextCards = () => {
           </blockquote>
         </figure>
       </div>
-    </div>
+    </section>
   );
 };
 

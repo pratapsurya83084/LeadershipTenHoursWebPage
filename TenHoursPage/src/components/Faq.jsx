@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect,useRef } from "react";
 
 const Faq = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -58,13 +58,46 @@ const Faq = () => {
   const toggleAnswer11=()=>{
     setq11(!q11);
   }
+
+
+
+
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1,
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-scroll');
+        } else {
+          entry.target.classList.remove('animate-scroll');
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const elements = section.querySelectorAll('.smooth-scroll');
+    elements.forEach(el => observer.observe(el));
+
+    return () => {
+      elements.forEach(el => observer.unobserve(el));
+    };
+  }, []);
+
   return (
-    <div className="faq-section">
+    <section ref={sectionRef} className="faq-section">
       {/* <div> */}
-      <h1 className="text-center text-xl md:text-2xl lg:text-3xl font-bold mt-10">
+      <h1 className=" smooth-scroll text-center text-xl md:text-2xl lg:text-3xl font-bold mt-10">
         Frequently Asked Questions
       </h1>
-      <div className="flex justify-center mb-4">
+      <div className="smooth-scroll flex justify-center mb-4">
         <svg
           width="300"
           height="20"
@@ -82,7 +115,7 @@ const Faq = () => {
       </div>
 
       {/* FAQ   questions */}
-      <div className="sm:text-xl mx-4 sm:mx-5 md:mx-[90px]">
+      <div className="smooth-scroll sm:text-xl mx-4 sm:mx-5 md:mx-[90px]">
         {/* Q1 */}
         <div>
           <div
@@ -443,7 +476,7 @@ const Faq = () => {
         </div>
         <hr className="text-gray" />
       </div>
-    </div>
+    </section>
   );
 };
 

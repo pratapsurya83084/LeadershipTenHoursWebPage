@@ -1,10 +1,41 @@
-import React from "react";
+import React ,{useEffect,useRef}  from "react";
 
 const TenHouresSection = () => {
+
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1,
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-scroll');
+        } else {
+          entry.target.classList.remove('animate-scroll');
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const elements = section.querySelectorAll('.smooth-scroll');
+    elements.forEach(el => observer.observe(el));
+
+    return () => {
+      elements.forEach(el => observer.unobserve(el));
+    };
+  }, []);
+
+  
   return (
     // bg-custom-brown
-    <section className=" ">
-      <h1 className="text-center text-xl font-bold p-4 ">
+    <section ref={sectionRef}>
+      <h1 className="smooth-scroll  text-center text-xl font-bold p-4 ">
         Embark on a life-changing
         <strong className="font-bold text-yellow-200 px-2">10 hours</strong>
         leadership training journey, unveiling invaluable business insights,
@@ -12,8 +43,8 @@ const TenHouresSection = () => {
         in leadership
       </h1>
 
-      <div className="gap-5 mb-10 p-3 mt-10  lg:flex flex-row justify-center items-center">
-        <div className=" lg:w-auto xl:ml-10 sm:p-4  lg:mb-0">
+      <div className="smooth-scroll   gap-5 mb-10 p-3 mt-10  lg:flex flex-row justify-center items-center">
+        <div className="smooth-scroll lg:w-auto xl:ml-10 sm:p-4  lg:mb-0">
           {/* overflow-hidden */}
           <div className="workshop-left-section lg:h-[460px] lg:w-[500px]  relative">
             {/* md:right-96 */}
@@ -22,7 +53,7 @@ const TenHouresSection = () => {
             </h1>
             <img
               // md:ml-[200px] h-[500px],object-cover
-              className="radius-yellow  h-[300px] sm:mx-auto  sm:h-[500px] md:h-[460px]  xl:h-[400px] lg:w-[500px]    p-  w-full  rounded-3xl"
+              className="  radius-yellow  h-[300px] sm:mx-auto  sm:h-[500px] md:h-[460px]  xl:h-[400px] lg:w-[500px]    p-  w-full  rounded-3xl"
               src="/MY PICTURE AT FIRST.png" // Make sure your image path is correct
               alt="WorkshopImage"
             />
@@ -34,18 +65,18 @@ const TenHouresSection = () => {
         {/* leftside text-section */}
 
         <div
-          className="leftside-text-section  
+          className=" smooth-scroll leftside-text-section  
           sm:text-center  lg:text-left"
         >
           <h4 className="font-bold  text-2xl lg:text-3xl text-yellow-200  py-2">
             Training in a one-on-one setting
           </h4>{" "}
           {/* <br /> */}
-          <p className="py-2 mt-2 font-bold">With Mr. Bishop Adhikari</p>
-          <p className="font-bold">
+          <p className="smooth-scrollpy-2 mt-2 font-bold">With Mr. Bishop Adhikari</p>
+          <h2 className="smooth-scroll font-bold">
             <i>Entrepreneur, coach and social change advocate</i>
-          </p>
-          <p className="">
+          </h2>
+          <p className="smooth-scroll">
             Weekly,pick from a pool of
             <strong className="font-bold px-2">200+</strong>
             skills across

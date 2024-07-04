@@ -1,9 +1,39 @@
-import React from 'react'
+import React ,{useEffect,useRef} from 'react'
 
 const SingleVidio = () => {
+  const sectionRef = useRef(null);
+  useEffect(() => {
+    const section = sectionRef.current;
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1,
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-scroll');
+        } else {
+          entry.target.classList.remove('animate-scroll');
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const elements = section.querySelectorAll('.smooth-scroll');
+    elements.forEach(el => observer.observe(el));
+
+    return () => {
+      elements.forEach(el => observer.unobserve(el));
+    };
+  }, []);
+
   return (
-    <div className='mt-10 rounded-3xl bg-custom-brown radius-yellow'>
-       <h2 className='text-xl md:text-2xl lg:text-3xl font-bold text-center p-4'>
+    <section 
+    ref={sectionRef}
+    className='mt-10 rounded-3xl bg-custom-brown radius-yellow'>
+       <h2 className='smooth-scroll text-xl md:text-2xl lg:text-3xl font-bold text-center p-4'>
        10x% empowering your journey to financial triumph through strategic revenue goals for future with this programe</h2>
        <div className="flex justify-center mb-4">
           <svg
@@ -22,7 +52,7 @@ const SingleVidio = () => {
           </svg>
         </div>
         <iframe
-          className='sm:mb-10 pb-'
+          className='smooth-scroll sm:mb-10 pb-'
           title="vimeo-player"
           src="https://player.vimeo.com/video/854930213?h=b157a37779"
           width="100%"
@@ -30,7 +60,7 @@ const SingleVidio = () => {
           frameBorder="0"
           allowFullScreen
         ></iframe>
-    </div>
+    </section>
   )
 }
 

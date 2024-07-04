@@ -1,12 +1,43 @@
-import React from "react";
+import React ,{useEffect,useRef}  from "react";
 
 const Vidios = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1,
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-scroll');
+        } else {
+          entry.target.classList.remove('animate-scroll');
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const elements = section.querySelectorAll('.smooth-scroll');
+    elements.forEach(el => observer.observe(el));
+
+    return () => {
+      elements.forEach(el => observer.unobserve(el));
+    };
+  }, []);
+
   return (
-    <section>
-      <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-center p-2 mt-4">
+    <section  
+    ref={sectionRef}
+    >
+      <h2 className=" smooth-scroll text-xl md:text-2xl lg:text-3xl font-bold text-center p-2 mt-4">
         Engage in immersive learning and unleash your leadership brilliance
       </h2>
-      <div className="flex justify-center mb-4">
+      <div className=" smooth-scroll flex justify-center mb-4">
           <svg
             width="400"
             height="30"
@@ -76,7 +107,7 @@ const Vidios = () => {
             frameBorder="0"
             allowFullScreen
             title="YouTube Video 1"
-            className="block rounded-3xl radius-yellow"
+            className=" smooth-scroll block rounded-3xl radius-yellow"
           ></iframe>
         </div>
         <div className="video-2 p-2">
@@ -87,7 +118,7 @@ const Vidios = () => {
             frameBorder="0"
             allowFullScreen
             title="YouTube Video 2"
-            className="block rounded-3xl radius-yellow"
+            className=" smooth-scroll block rounded-3xl radius-yellow"
           ></iframe>
         </div>
       </div>

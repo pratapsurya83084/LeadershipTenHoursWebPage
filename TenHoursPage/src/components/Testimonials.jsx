@@ -1,17 +1,49 @@
-import React from 'react'
+import React ,{useEffect,useRef} from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGreaterThan } from "@fortawesome/free-solid-svg-icons";
 
 const SixTestimonials = () => {
+
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1,
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-scroll');
+        } else {
+          entry.target.classList.remove('animate-scroll');
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const elements = section.querySelectorAll('.smooth-scroll');
+    elements.forEach(el => observer.observe(el));
+
+    return () => {
+      elements.forEach(el => observer.unobserve(el));
+    };
+  }, []);
+
   return (
-    <div>
+    <section 
+    ref={sectionRef}
+    >
        <div className="mt-10 nine-testimonial-section">
       <div className="bg-custom-brown radius-yellow rounded-3xl pb-4 ">
-        <h1 className="text-xl md:text-2xl lg:text-3xl text-center font-bold p-6">
+        <h1 className="smooth-scroll text-xl md:text-2xl lg:text-3xl text-center font-bold p-6">
           {" "}
           Testimonials from Previous Participants
         </h1>
-        <div className="flex justify-center mb-4">
+        <div className="smooth-scroll  flex justify-center mb-4">
           <svg
             width="300"
             height="30"
@@ -28,9 +60,9 @@ const SixTestimonials = () => {
           </svg>
         </div>
         {/* section-29 */}
-        <div className=" justify-center  grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-3 gap-10 mx-4 ">
+        <div className="smooth-scroll   justify-center  grid grid-cols-1 sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-3 gap-10 mx-4 ">
           {/* cards 1 max-w-sm */}
-          <div className=" p-2 radius-yellow rounded-3xl  flex flex-col justify-center items-center bg-gray">
+          <div className="smooth-scroll   p-2 radius-yellow rounded-3xl  flex flex-col justify-center items-center bg-gray">
             <img
               className="h-56 rounded-3xl mt-2"
               src="\ARUN DESHMUKHA.jpg"
@@ -56,7 +88,7 @@ const SixTestimonials = () => {
           </div>
 
           {/* cards 2  max-w-sm*/}
-          <div className="p-2 radius-yellow rounded-3xl  flex flex-col justify-center items-center bg-gray">
+          <div className="smooth-scroll  p-2 radius-yellow rounded-3xl  flex flex-col justify-center items-center bg-gray">
             <img
               className="h-56 rounded-3xl"
               src="\Keiko Tanaka.jpeg"
@@ -77,7 +109,7 @@ const SixTestimonials = () => {
           </div>
 
           {/* cards 3 max-w-sm*/}
-          <div className="p-2 radius-yellow rounded-3xl  flex flex-col justify-center items-center bg-gray">
+          <div className="smooth-scroll  p-2 radius-yellow rounded-3xl  flex flex-col justify-center items-center bg-gray">
             <img
               className="h-56 rounded-3xl"
               src="\Anita John.jpeg"
@@ -101,7 +133,7 @@ const SixTestimonials = () => {
           </div>
 
           {/* cards 4  max-w-sm*/}
-          <div className="p-2 radius-yellow rounded-3xl  flex flex-col justify-center items-center bg-gray">
+          <div className="smooth-scroll  p-2 radius-yellow rounded-3xl  flex flex-col justify-center items-center bg-gray">
             <img
               className="h-56 rounded-3xl"
               src="\Priya Kumari.jpeg"
@@ -125,7 +157,7 @@ const SixTestimonials = () => {
           </div>
 
           {/* cards 5 max-w-sm*/}
-          <div className="p-2 radius-yellow rounded-3xl flex flex-col justify-center items-center bg-gray">
+          <div className="smooth-scroll p-2 radius-yellow rounded-3xl flex flex-col justify-center items-center bg-gray">
             <img
               className="h-56 rounded-3xl"
               src="\David Johnson.jpeg"
@@ -150,7 +182,7 @@ const SixTestimonials = () => {
           </div>
 
           {/* cards 6 max-w-sm*/}
-          <div className="p-2  radius-yellow rounded-3xl  flex flex-col justify-center items-center bg-gray">
+          <div className="smooth-scroll  p-2  radius-yellow rounded-3xl  flex flex-col justify-center items-center bg-gray">
             <img
               className="h-56 rounded-3xl"
               src="\Akira Nakamura.jpeg"
@@ -177,7 +209,7 @@ const SixTestimonials = () => {
         </div>
                {/* action now button */}
               
-        <div className="flex justify-center mt-8 sm:mt-8 py-2 sm:px-2">
+        <div className="smooth-scroll  flex justify-center mt-8 sm:mt-8 py-2 sm:px-2">
         <a href="https://pages.razorpay.com/leadershipcourse"> 
         <button className="bg-blue-600 text-white sm:text-xl md:text-2xl font-bold py-2 px-6 rounded-xl hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 flex items-center justify-between space-x-4">
             <span className="flex-grow text-center">Enroll Now  ₹25499</span>
@@ -196,7 +228,7 @@ const SixTestimonials = () => {
           /> */}
       </div>
     </div>
-    </div>
+    </section>
   )
 }
 

@@ -1,17 +1,48 @@
-import React from 'react'
+import React ,{useEffect,useRef}from 'react'
 
 const Promise = () => {
+
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1,
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-scroll');
+        } else {
+          entry.target.classList.remove('animate-scroll');
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const elements = section.querySelectorAll('.smooth-scroll');
+    elements.forEach(el => observer.observe(el));
+
+    return () => {
+      elements.forEach(el => observer.unobserve(el));
+    };
+  }, []);
   return (
-    <section className="promise-section">
+    <section
+    ref={sectionRef}
+    className="promise-section">
     <div className="radius-yellow mx-2 sm:mx-10 md:mx-10 lg:mx-20 mt-10  rounded-3xl bg-custom-brown flex flex-col justify-center items-center">
      
       <div>
         {/* section 37 */}
-        <h1 className="text-center text-xl md:text-2xl lg:text-3xl font-bold p-2">
+        <h1 className="smooth-scroll text-center text-xl md:text-2xl lg:text-3xl font-bold p-2">
           {" "}
           My Decisions
         </h1>
-        <div className="flex justify-center mb-4">
+        <div className="smooth-scroll flex justify-center mb-4">
           <svg
             width="300"
             height="20"
@@ -27,15 +58,15 @@ const Promise = () => {
             />
           </svg>
         </div>
-        <p className="text-center md:text-xl font-bold p-2">
+        <p className="smooth-scroll text-center md:text-xl font-bold p-2">
           I stand behind our seminars with a no-questions-asked money-back
           guarantee.
         </p>
       </div>
 
       <div className="p-4">
-        <h1 className='font-bold'>Dear Sir/Madam,</h1> <br />
-        <p className='md:text-xl'>
+        <h1 className='font-bold smooth-scroll'>Dear Sir/Madam,</h1> <br />
+        <p className='smooth-scroll md:text-xl'>
           {" "}
           I am dedicated to supporting your business growth journey and
           sharing invaluable insights that have positively impacted over
@@ -48,9 +79,9 @@ const Promise = () => {
          <span className=" text-yellow-200 ml-2">ceobishophumane@bisjhintus.com</span> , and my team will promptly process
           your refund.
         </p>
-        <p className="mt-10">Best Regards,<br />
+        <p className="smooth-scroll mt-10">Best Regards,<br />
          Bishop Adhikari</p>
-        <img  className="h-[60px] mt-2 w-[140px]" src="\Screenshot 2024-06-24 122629.png" alt="" />
+        <img  className="smooth-scroll h-[60px] mt-2 w-[140px]" src="\Screenshot 2024-06-24 122629.png" alt="" />
       </div>
     </div> 
   </section>

@@ -1,9 +1,41 @@
-import React from "react";
+import React ,{useEffect,useRef} from "react";
 
 const CompanyPicture = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1,
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-scroll');
+        } else {
+          entry.target.classList.remove('animate-scroll');
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const elements = section.querySelectorAll('.smooth-scroll');
+    elements.forEach(el => observer.observe(el));
+
+    return () => {
+      elements.forEach(el => observer.unobserve(el));
+    };
+  }, []);
+
+
+  
   return (
-    <div className="mb-  bg-custom-brown radius-yellow rounded-3xl">
-      <section className=" p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 md:flex-row gap-5">
+    <section ref={sectionRef}>
+    <div className="smooth-scroll mb-  bg-custom-brown radius-yellow rounded-3xl">
+      <div className="smooth-scroll p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 md:flex-row gap-5">
         <img
           className=" h-82 p-4 rounded-3xl    md:h-52  w-full"
           src="\Screenshot 2024-06-28 135140.png"
@@ -30,9 +62,9 @@ const CompanyPicture = () => {
           src="\Screenshot 2024-06-28 135342.png"
           alt=""
         />
-      </section>
+      </div>
 
-      <div className="mt-10 p-5 gap-5 flex flex-col md:flex-row justify-center items-center">
+      <div className="smooth-scroll mt-10 p-5 gap-5 flex flex-col md:flex-row justify-center items-center">
         {/* leftside imag */}
         <div className="leftSide-image">
           <img
@@ -61,6 +93,7 @@ const CompanyPicture = () => {
         </div>
       </div>
     </div>
+    </section>
   );
 };
 

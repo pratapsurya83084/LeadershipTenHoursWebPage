@@ -1,16 +1,48 @@
-import React from 'react'
+import React ,{useRef,useEffect} from 'react'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGreaterThan } from "@fortawesome/free-solid-svg-icons";
 
 const LearnTenHours = () => {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1,
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-scroll');
+        } else {
+          entry.target.classList.remove('animate-scroll');
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const elements = section.querySelectorAll('.smooth-scroll');
+    elements.forEach(el => observer.observe(el));
+
+    return () => {
+      elements.forEach(el => observer.unobserve(el));
+    };
+  }, []);
+  
+
   return (
     <div>
-        <section className="fourHours-learnSection-section">
+        <section  
+        ref={sectionRef}
+        className="fourHours-learnSection-section">
       <div className="flex flex-col justify-center items-center mx-10 mt-10">
-        <h1 className="text-center text-xl md:text-2xl lg:text-3xl font-bold">
+        <h1 className="smooth-scroll  text-center text-xl md:text-2xl lg:text-3xl font-bold">
         These 10 hours will revolutionize your approach with advanced sales and negotiation techniques and strategies
         </h1>
-        <div className="flex justify-center mb-4">
+        <div className="smooth-scroll flex justify-center mb-4">
           <svg
             width="300"
             height="30"
@@ -25,9 +57,9 @@ const LearnTenHours = () => {
             />
           </svg>
         </div>
-        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-10">
+        <div className="smooth-scroll mt-6 grid grid-cols-1 sm:grid-cols-2 gap-10">
           {/* card 1 */}
-          <div className="radius-yellow max-w-sm flex flex-row bg-custom-gray  rounded-3xl">
+          <div className="smooth-scroll radius-yellow max-w-sm flex flex-row bg-custom-gray  rounded-3xl">
             <div className="md:text-2xl font-bold tracking-tight text-black py-4 px-4 mt-8 bg-yellow-200 mb-7 rounded-tr-2xl rounded-br-2xl">
               01
             </div>
@@ -37,7 +69,7 @@ const LearnTenHours = () => {
           </div>
 
           {/* card 2 */}
-          <div className=" radius-yellow max-w-sm flex flex-row bg-custom-gray  rounded-3xl">
+          <div className="smooth-scroll radius-yellow max-w-sm flex flex-row bg-custom-gray  rounded-3xl">
             <div className="text-2xl font-bold tracking-tight text-black py-4 px-4 mt-8 bg-yellow-200 mb-7 rounded-tr-2xl rounded-br-2xl">
               02
             </div>
@@ -48,7 +80,7 @@ const LearnTenHours = () => {
           </div>
 
           {/* card 3 */}
-          <div className="radius-yellow max-w-sm flex flex-row bg-custom-gray  rounded-3xl">
+          <div className="smooth-scroll radius-yellow max-w-sm flex flex-row bg-custom-gray  rounded-3xl">
             <div className="text-2xl font-bold tracking-tight text-black py-4 px-4 mt-8 bg-yellow-200 mb-7 rounded-tr-2xl rounded-br-2xl">
               03
             </div>
@@ -58,7 +90,7 @@ const LearnTenHours = () => {
           </div>
 
           {/* card 4 */}
-          <div className="radius-yellow max-w-sm flex flex-row bg-custom-gray  rounded-3xl">
+          <div className="smooth-scroll radius-yellow max-w-sm flex flex-row bg-custom-gray  rounded-3xl">
             <div className="text-2xl font-bold tracking-tight text-black py-4 px-4 mt-8 bg-yellow-200 mb-7 rounded-tr-2xl rounded-br-2xl">
               04
             </div>
@@ -69,7 +101,7 @@ const LearnTenHours = () => {
           </div>
 
           {/* card 5 */}
-          <div className="radius-yellow max-w-sm flex flex-row bg-custom-gray  rounded-3xl">
+          <div className="smooth-scroll radius-yellow max-w-sm flex flex-row bg-custom-gray  rounded-3xl">
             <div className="text-2xl font-bold tracking-tight text-black py-4 px-4 mt-8 bg-yellow-200 mb-7 rounded-tr-2xl rounded-br-2xl">
               05
             </div>
@@ -80,7 +112,7 @@ const LearnTenHours = () => {
           </div>
 
           {/* card 6 */}
-          <div className="radius-yellow max-w-sm flex flex-row bg-custom-gray  rounded-3xl">
+          <div className="smooth-scroll radius-yellow max-w-sm flex flex-row bg-custom-gray  rounded-3xl">
             <div className="text-2xl font-bold tracking-tight text-black py-4 px-4 mt-8 bg-yellow-200 mb-7 rounded-tr-2xl rounded-br-2xl">
               06
             </div>
@@ -93,7 +125,7 @@ const LearnTenHours = () => {
 
              {/* action now button */}
             
-             <div className="flex justify-center mt-8 sm:mt-8 py-2 sm:px-2">
+             <div className="smooth-scroll flex justify-center mt-8 sm:mt-8 py-2 sm:px-2">
              <a href="https://pages.razorpay.com/leadershipcourse"> 
           <button className="bg-blue-600 text-white sm:text-xl md:text-2xl font-bold py-2 px-6 rounded-xl hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 flex items-center justify-between space-x-4">
             <span className="flex-grow text-center">Enroll Now  ₹25499</span>

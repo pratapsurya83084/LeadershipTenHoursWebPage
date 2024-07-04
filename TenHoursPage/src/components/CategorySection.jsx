@@ -1,10 +1,42 @@
-import React from "react";
+import React ,{useEffect,useRef}  from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { CheckIcon } from "@heroicons/react/24/solid";
 
 const CategorySection = () => {
+
+
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1,
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-scroll');
+        } else {
+          entry.target.classList.remove('animate-scroll');
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const elements = section.querySelectorAll('.smooth-scroll');
+    elements.forEach(el => observer.observe(el));
+
+    return () => {
+      elements.forEach(el => observer.unobserve(el));
+    };
+  }, []);
+
+
   const settings = {
     dots: true,
     infinite: true,
@@ -18,8 +50,8 @@ const CategorySection = () => {
   };
 
   return (
-    <div className="">
-      <h1 className="carousel-section text-center mt-10 p-4 text-xl  md:text-2xl lg:text-3xl font-bold">
+    <section  ref={sectionRef}>
+      <h1 className="smooth-scroll carousel-section text-center mt-10 p-4 text-xl  md:text-2xl lg:text-3xl font-bold">
         Select from a diverse range of 200+ skill sets across 5 selective
         categories,
         {/* <br /> */}
@@ -42,11 +74,11 @@ const CategorySection = () => {
         </div>
       </h1>
 
-      <div className="image-carousel-section flex justify-center items-center w-full p-4 rounded-3xl bg-custom-brown">
-  <Slider {...settings} className="flex p-2 w-full">
+      <div className="  image-carousel-section flex justify-center items-center w-full p-4 rounded-3xl bg-custom-brown">
+  <Slider {...settings} className="smooth-scroll flex p-2 w-full">
     {/* First slide */}
     <div className="p-2">
-      <div className="md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
+      <div className="smooth-scroll  md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
         <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow lg:h-40">
           <div className="flex justify-center items-center mt-2">
             <div className="text-white mx-2 mt-2 h-6 w-6 flex justify-center items-center">
@@ -78,7 +110,7 @@ const CategorySection = () => {
 
     {/* Second slide */}
     <div className="p-2">
-      <div className="md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
+      <div className="smooth-scroll md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
         <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow lg:h-40">
           <div className="flex justify-center items-center mt-2">
             <div className="text-white mx-2 mt-2 h-6 w-6 flex justify-center items-center">
@@ -107,7 +139,7 @@ const CategorySection = () => {
 
     {/* Third slide */}
     <div className="p-2">
-      <div className="md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
+      <div className="smooth-scroll md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
         <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow lg:h-40">
           <div className="flex justify-center items-center mt-2">
             <div className="text-white mx-2 mt-2 h-6 w-6 flex justify-center items-center">
@@ -137,7 +169,7 @@ const CategorySection = () => {
   </Slider>
 </div>
 
-    </div>
+    </section>
   );
 };
 

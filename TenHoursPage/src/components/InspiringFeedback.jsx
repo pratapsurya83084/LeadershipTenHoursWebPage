@@ -1,11 +1,44 @@
-import React from "react";
+import React ,{useEffect,useRef} from "react";
 
 const InspiringFeedback = () => {
+
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const section = sectionRef.current;
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1,
+    };
+
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-scroll');
+        } else {
+          entry.target.classList.remove('animate-scroll');
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    const elements = section.querySelectorAll('.smooth-scroll');
+    elements.forEach(el => observer.observe(el));
+
+    return () => {
+      elements.forEach(el => observer.unobserve(el));
+    };
+  }, []);
+  
+
+
   return (
     <div>
-      <section className="mt-10 bg-custom-brown radius-yellow rounded-3xl body-font">
-       <h1 className=" mt-4 text-center text-2xl sm:text-3xl font-bold mb-0">Inspiring Feedback</h1>
-      <div className="flex justify-center mb-4">
+      <section ref={sectionRef}
+       className="mt-10 bg-custom-brown radius-yellow rounded-3xl body-font">
+       <h1 className="smooth-scroll mt-4 text-center text-2xl sm:text-3xl font-bold mb-0">Inspiring Feedback</h1>
+      <div className="smooth-scroll flex justify-center mb-4">
           <svg
             width="400"
             height="30"
@@ -21,12 +54,12 @@ const InspiringFeedback = () => {
             />
           </svg>
         </div>
-        <div className="container px-5 py-4 mx-auto">
+        <div className="smooth-scroll container px-5 py-4 mx-auto">
        
           <div className="flex flex-wrap  justify-center">
 
             {/* card1 */}
-            <div className="radius-yellow lg:w-[350px]   lg:mb-0 p-4 bg-custom-brown text-white m-3   rounded-3xl">
+            <div className="smooth-scroll radius-yellow lg:w-[350px]   lg:mb-0 p-4 bg-custom-brown text-white m-3   rounded-3xl">
               <div className="h-full text-center">
                 <img
                   alt="testimonial"
@@ -46,7 +79,7 @@ const InspiringFeedback = () => {
               </div>
             </div>
             {/* card2 */}
-            <div className="radius-yellow lg:w-[350px] lg:mb-0 p-4 bg-custom-brown text-white m-3   rounded-3xl">
+            <div className="smooth-scroll radius-yellow lg:w-[350px] lg:mb-0 p-4 bg-custom-brown text-white m-3   rounded-3xl">
               <div className="h-full text-center">
                 <img
                   alt="testimonial"
@@ -67,7 +100,7 @@ const InspiringFeedback = () => {
             </div>
 
             {/* card 3 */}
-            <div className="radius-yellow lg:w-[350px] lg:mb-0 p-4 bg-custom-brown text-white m-3   rounded-3xl">
+            <div className="smooth-scroll radius-yellow lg:w-[350px] lg:mb-0 p-4 bg-custom-brown text-white m-3   rounded-3xl">
               <div className="h-full text-center">
                 <img
                   alt="testimonial"
