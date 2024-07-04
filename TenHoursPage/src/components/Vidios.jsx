@@ -3,7 +3,7 @@ import React from "react";
 const Vidios = () => {
   return (
     <section>
-      <h2 className="text-2xl font-bold text-center p-2 mt-4">
+      <h2 className="text-xl md:text-2xl lg:text-3xl font-bold text-center p-2 mt-4">
         Engage in immersive learning and unleash your leadership brilliance
       </h2>
       <div className="flex justify-center mb-4">

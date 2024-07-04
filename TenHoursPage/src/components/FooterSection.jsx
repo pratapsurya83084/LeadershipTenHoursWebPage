@@ -63,17 +63,19 @@ const FooterSection = () => {
   </div>
   
   {/* action button */}
-  <a href="https://rzp.io/l/badecisionmc">
+  
   <div className="flex justify-center md:mt-8 sm:mt-8 py-2 sm:px-2">
+  <a href="https://pages.razorpay.com/leadershipcourse">
       <button className="bg-blue-600 text-white md:text-xl font-bold py-2 px-6 rounded-xl md:mb-4 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 flex items-center justify-between space-x-4">
-        <span className="flex-grow text-center">Action Now for ₹199</span>
+        <span className="flex-grow text-center">Enroll Now ₹25499</span>
         <FontAwesomeIcon
           icon={faGreaterThan}
           className="bg-white text-blue-500 px-4 p-2 rounded-lg"
         />
       </button>
+  </a>
     </div>
-    </a>
+  
   </div>
 </footer>
   )

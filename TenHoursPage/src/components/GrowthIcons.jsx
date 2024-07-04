@@ -3,7 +3,7 @@ import React from 'react'
 const GrowthIcons = () => {
   return (
     <section>
-       <h1 className='text-center p-4 text-2xl font-bold'>Unlock your full potential for personal
+       <h1 className='text-center p-4 text-xl md:text-2xl lg:text-3xl font-bold'>Unlock your full potential for personal
         and professional growth
        </h1>
        <div className="flex justify-center mb-4">

@@ -3,7 +3,7 @@ import React from "react";
 const ScreenshotPicture = () => {
   return (
     <div>
-      <h1 className="text-center text-xl md:text-2xl font-bold p-4 mt-10">
+      <h1 className="text-center text-xl  md:text-2xl lg:text-3xl font-bold p-4 mt-10">
         Ignite your inner visionary and join our exclusive workshop to scale
         your buisness and career unleash your full potential
          {/* -just like this empowered

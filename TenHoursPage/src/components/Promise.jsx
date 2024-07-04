@@ -7,7 +7,7 @@ const Promise = () => {
      
       <div>
         {/* section 37 */}
-        <h1 className="text-center text-2xl font-bold p-2">
+        <h1 className="text-center text-xl md:text-2xl lg:text-3xl font-bold p-2">
           {" "}
           My Decisions
         </h1>
@@ -43,7 +43,7 @@ const Promise = () => {
           seminars receives more value than they anticipated. If, for any
           reason, you attend our seminar and feel that you haven't gained the
           expected value, I take full responsibility. Therefore, I promise a
-          complete refund of the seminar fee of Rs 199. Simply email me at 
+          complete refund of the seminar fee of Rs 25499. Simply email me at 
           {/* px-2 */}
          <span className=" text-yellow-200 ml-2">ceobishophumane@bisjhintus.com</span> , and my team will promptly process
           your refund.

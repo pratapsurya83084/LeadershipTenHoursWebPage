@@ -7,7 +7,7 @@ const OurGuarantee = () => {
     <div>
          <section className="guarantee-section">
       {/* <div> */}
-        <div className="text-center mt-10 p-4 text-2xl font-bold">
+        <div className="text-center mt-10 p-4 text-xl md:text-2xl lg:text-3xl font-bold">
           <h1>Still Unsure? We've Got You Covered!</h1>
           <div className="flex justify-center mb-4">
             <svg
@@ -42,7 +42,7 @@ const OurGuarantee = () => {
       Our Guarantee
     </h1>
     <p class="md:text-xl p-2  lg:text-2xl">
-      Take advantage of this incredible offer now for only Rs 199, with a money-back 
+      Take advantage of this incredible offer now for only Rs 25499 , with a money-back 
       guarantee included. Enroll today, attend our seminar, and if you're not satisfied 
       for any reason, just send us an email, and we'll refund your entire payment—no 
       questions asked!
@@ -59,13 +59,15 @@ const OurGuarantee = () => {
         {/* action now button */}
         
         <div className="flex justify-center mt-8 sm:mt-8 py-2 sm:px-2">
-        <a href="https://rzp.io/l/badecisionmc"> <button className="bg-blue-600 text-white sm:text-xl md:text-2xl font-bold py-2 px-6 rounded-xl hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 flex items-center justify-between space-x-4">
-            <span className="flex-grow text-center">Action Now for ₹199</span>
+        <a href="https://pages.razorpay.com/leadershipcourse"> 
+         <button className="bg-blue-600 text-white sm:text-xl md:text-2xl font-bold py-2 px-6 rounded-xl hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 flex items-center justify-between space-x-4">
+            <span className="flex-grow text-center">Enroll Now  ₹25499</span>
             <FontAwesomeIcon
               icon={faGreaterThan}
               className="bg-white text-blue-500 px-4 p-2 rounded-lg"
             />
-          </button>    </a>
+          </button> 
+             </a>
         </div>
     
       {/* </div> */}

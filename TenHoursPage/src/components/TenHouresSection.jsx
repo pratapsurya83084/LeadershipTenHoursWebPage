@@ -57,7 +57,7 @@ const TenHouresSection = () => {
             that align with your interests and goals
           </p>
           <div className="mt-5 flex justify-center mb-10">
-            <a href="#razorpay/link">
+          <a href="https://pages.razorpay.com/leadershipcourse"> 
               <button className="bg-blue-600 p-2 text-xl px-8 rounded-lg">
                 {" "}
                 ENROLL NOW

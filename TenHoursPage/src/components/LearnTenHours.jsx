@@ -7,7 +7,7 @@ const LearnTenHours = () => {
     <div>
         <section className="fourHours-learnSection-section">
       <div className="flex flex-col justify-center items-center mx-10 mt-10">
-        <h1 className="text-center text-2xl font-bold">
+        <h1 className="text-center text-xl md:text-2xl lg:text-3xl font-bold">
         These 10 hours will revolutionize your approach with advanced sales and negotiation techniques and strategies
         </h1>
         <div className="flex justify-center mb-4">
@@ -92,17 +92,19 @@ const LearnTenHours = () => {
         </div>
 
              {/* action now button */}
-             <a href="https://rzp.io/l/badecisionmc">
+            
              <div className="flex justify-center mt-8 sm:mt-8 py-2 sm:px-2">
+             <a href="https://pages.razorpay.com/leadershipcourse"> 
           <button className="bg-blue-600 text-white sm:text-xl md:text-2xl font-bold py-2 px-6 rounded-xl hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 flex items-center justify-between space-x-4">
-            <span className="flex-grow text-center">Action Now for ₹199</span>
+            <span className="flex-grow text-center">Enroll Now  ₹25499</span>
             <FontAwesomeIcon
               icon={faGreaterThan}
               className="bg-white text-blue-500 px-4 p-2 rounded-lg"
             />
           </button>
-        </div>
         </a>
+        </div>
+        
       </div>
     </section>
     </div>

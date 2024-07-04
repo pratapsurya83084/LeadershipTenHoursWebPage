@@ -3,7 +3,7 @@ import React from 'react'
 const SingleVidio = () => {
   return (
     <div className='mt-10 rounded-3xl bg-custom-brown radius-yellow'>
-       <h2 className='text-2xl font-bold text-center p-4'>
+       <h2 className='text-xl md:text-2xl lg:text-3xl font-bold text-center p-4'>
        10x% empowering your journey to financial triumph through strategic revenue goals for future with this programe</h2>
        <div className="flex justify-center mb-4">
           <svg
@@ -22,7 +22,7 @@ const SingleVidio = () => {
           </svg>
         </div>
         <iframe
-        //   className='rounded-3xl border-2 border-gray-300'
+          className='sm:mb-10 pb-'
           title="vimeo-player"
           src="https://player.vimeo.com/video/854930213?h=b157a37779"
           width="100%"

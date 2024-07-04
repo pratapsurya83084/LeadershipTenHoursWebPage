@@ -4,7 +4,7 @@ const CoachSection = () => {
   return (
     <section className="coach-section">
     <div className="flex flex-col items-center bg-black text-white p-8">
-      <h1 className="text-3xl font-bold mb-4 text-center">
+      <h1 className="text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-center">
         Get Acquainted with Your Coach
       </h1>
       <div className="flex justify-center mb-4">

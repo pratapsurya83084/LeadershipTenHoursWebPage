@@ -3,7 +3,7 @@ import React from "react";
 const FourAdditionPicture = () => {
   return (
     <div className="mt-10">
-      <h1 className="p-5 text-center py-2 font-bold text-2xl">
+      <h1 className="p-5 text-center py-2 font-bold text-xl md:text-2xl lg:text-3xl">
         Claim these incredible additions to your workshop experience!
       </h1>
       <div className="flex justify-center mb-4">

@@ -19,10 +19,10 @@ const CategorySection = () => {
 
   return (
     <div className="">
-      <h1 className="carousel-section text-center mt-10 p-4 text-2xl font-bold">
+      <h1 className="carousel-section text-center mt-10 p-4 text-xl  md:text-2xl lg:text-3xl font-bold">
         Select from a diverse range of 200+ skill sets across 5 selective
         categories,
-        <br />
+        {/* <br /> */}
         out of 20+ different categories, offering the following advantages
         <div className="flex justify-center mb-4">
           <svg
@@ -47,25 +47,27 @@ const CategorySection = () => {
     {/* First slide */}
     <div className="p-2">
       <div className="md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
-        <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow h-40">
+        <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow lg:h-40">
           <div className="flex justify-center items-center mt-2">
             <div className="text-white mx-2 mt-2 h-6 w-6 flex justify-center items-center">
               <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
             </div>
-            <p className="text-center overflow-hidden ml-2 pt-2">
-              Forge Team Trust with Expert Decision-Making :<br /> 
-              Strengthen team cohesion  <br /> and  trust through 
+            <p className="text-center overflow-hidden ml-2 lg:pt-2">
+              Forge Team Trust with Expert Decision-Making :
+              <br /> 
+              Strengthen team cohesion  
+               and  trust through  <br className="md:flex hidden" />
                 informed  decision-making
             </p>
           </div>
         </div>
 
-        <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow h-40">
+        <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow lg:h-40">
           <div className="flex justify-center items-center mt-2">
             <div className="text-white mx-2 mt-2 h-6 w-6 flex justify-center items-center">
               <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
             </div>
-            <p className="text-center overflow-hidden ml-2 pt-3">
+            <p className="text-center overflow-hidden ml-2 lg:pt-3">
               Navigating High-Stakes Decisions : Trust within <br />
               Cross-Functional Teams
             </p>
@@ -77,7 +79,7 @@ const CategorySection = () => {
     {/* Second slide */}
     <div className="p-2">
       <div className="md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
-        <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow h-40">
+        <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow lg:h-40">
           <div className="flex justify-center items-center mt-2">
             <div className="text-white mx-2 mt-2 h-6 w-6 flex justify-center items-center">
               <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
@@ -89,7 +91,7 @@ const CategorySection = () => {
           </div>
         </div>
 
-        <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow h-40">
+        <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow lg:h-40">
           <div className="flex justify-center items-center mt-2">
             <div className="text-white mx-2 mt-2 h-6 w-6 flex justify-center items-center">
               <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
@@ -106,12 +108,12 @@ const CategorySection = () => {
     {/* Third slide */}
     <div className="p-2">
       <div className="md:flex justify-center items-center gap-10 md:gap-36 space-y-4">
-        <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow h-40">
+        <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow lg:h-40">
           <div className="flex justify-center items-center mt-2">
             <div className="text-white mx-2 mt-2 h-6 w-6 flex justify-center items-center">
               <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
             </div>
-            <p className="text-center overflow-hidden ml-2 pt-3">
+            <p className="text-center overflow-hidden ml-2 lg:pt-3">
               Conflict Resolution and Negotiation: Share <br />
               strategies for managing conflict <br />
               constructively and promoting a positive team environment
@@ -119,12 +121,12 @@ const CategorySection = () => {
           </div>
         </div>
 
-        <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow h-40">
+        <div className="flex-col bg-custom-gray p-4 rounded-xl radius-yellow lg:h-40">
           <div className="flex justify-center items-center mt-2">
             <div className="text-white mx-2 h-6 w-6 mt-2 flex justify-center items-center">
               <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
             </div>
-            <p className="text-center overflow-hidden ml-2 pt-3">
+            <p className="text-center overflow-hidden ml-2 lg:pt-3">
               Elevate Productivity Through Communication: Spark <br />
               team motivation and positivity with adept communication
             </p>

@@ -7,7 +7,7 @@ const SixTestimonials = () => {
     <div>
        <div className="mt-10 nine-testimonial-section">
       <div className="bg-custom-brown radius-yellow rounded-3xl pb-4 ">
-        <h1 className="text-2xl text-center font-bold p-6">
+        <h1 className="text-xl md:text-2xl lg:text-3xl text-center font-bold p-6">
           {" "}
           Testimonials from Previous Participants
         </h1>
@@ -178,8 +178,9 @@ const SixTestimonials = () => {
                {/* action now button */}
               
         <div className="flex justify-center mt-8 sm:mt-8 py-2 sm:px-2">
-        <a href="https://rzp.io/l/badecisionmc"> <button className="bg-blue-600 text-white sm:text-xl md:text-2xl font-bold py-2 px-6 rounded-xl hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 flex items-center justify-between space-x-4">
-            <span className="flex-grow text-center">Action Now for ₹199</span>
+        <a href="https://pages.razorpay.com/leadershipcourse"> 
+        <button className="bg-blue-600 text-white sm:text-xl md:text-2xl font-bold py-2 px-6 rounded-xl hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 flex items-center justify-between space-x-4">
+            <span className="flex-grow text-center">Enroll Now  ₹25499</span>
             <FontAwesomeIcon
               icon={faGreaterThan}
               className="bg-white text-blue-500 px-4 p-2 rounded-lg"

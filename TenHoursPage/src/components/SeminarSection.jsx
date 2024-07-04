@@ -7,7 +7,7 @@ const SeminarSection = () => {
   return (
     <section className="mt-14 md:mt-20  radius-yellow bg-custom-brown flex flex-col justify-center rounded-3xl items-center">
     {/* section 20 */}
-    <h1 className="mt-5 p-4  flex justify-center text-center text-2xl py-6 font-bold ">Who Will Benefit Most from This Seminar?</h1>
+    <h1 className="mt-5 p-4  flex justify-center text-center text-xl md:text-2xl lg:text-3xl py-6 font-bold ">Who Will Benefit Most from This Seminar?</h1>
     <div className="flex justify-center mb-4">
     <svg width="300" height="30" viewBox="0 0 100 20" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M5 15 Q 50 0, 95 15" stroke="yellow" strokeWidth="5" fill="none" />
@@ -132,17 +132,19 @@ const SeminarSection = () => {
     </div>
     {/* section -21 */}
            {/* action now button */}
-           <a href="https://rzp.io/l/badecisionmc">
+      
     <div className="flex justify-center mt-8 sm:mt-8 py-2 p-4 sm:px-2 mb-7">
+    <a href="https://pages.razorpay.com/leadershipcourse"> 
       <button className="bg-blue-600 text-white sm:text-xl font-bold py-2 px-6 rounded-xl hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400 flex items-center justify-between space-x-4">
-        <span className="flex-grow text-center">Action Now for ₹199</span>
+        <span className="flex-grow text-center">Enroll Now  ₹25499</span>
         <FontAwesomeIcon
           icon={faGreaterThan}
           className="bg-white text-blue-500 px-4 p-2 rounded-lg"
         />
       </button>
+      </a>
     </div>
-    </a>
+    
       
   </section>
   )
