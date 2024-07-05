@@ -48,40 +48,52 @@ const SeminarSection = () => {
       {/* leftside text for large screen */}
       <div className="p-4">
         <h1 className="smooth-scroll text-center font-bold text-2xl md:text-3xl">Who can join?</h1>
+    {/* 1st point */}
       <div className=" radius-yellow rounded-xl px-2 bg-gray flex items-center space-x-2 mt-2">
       <div className="text-white h-6 w-6 flex justify-center">
         <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
       </div>
       <p className="smooth-scroll p-3 md:p-3">
-      <b>Individuals with Startup Ventures or Established Businesses  
-      or Sales professionals  and management students : </b> Perfect     
-        for those seeking to improve their sales and 
-      negotiation skills 
-       for business growth
+      <b>Individuals with Startup Ventures or Established Businesses ,
+         Professionals , and Professionals and General Students :
+        </b> Perfect for those seeking to improve their 20+ skills for business growth
+
       </p>
     </div>
+    {/* 2nd point */}
     <div className="radius-yellow rounded-xl px-2 bg-gray flex items-center space-x-2 mt-2">
       <div className="text-white h-6 w-6 flex justify-center">
         <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
       </div>
       <p className="smooth-scroll p-3 md:p-3">
-      <b>Owners of Small Enterprises : </b> Ideal for
-       small business owners  
-        aiming to make informed
-        decisions that lead to 
-      increased 
-      profitability and scalability
+      <b>Owners of Small Enterprises : </b>
+      Ideal for small business owners aiming to make informed decisions that
+       lead to increased profitability and scalability
       </p>
     </div>
+    {/* 3rd point */}
     <div className="radius-yellow rounded-xl px-2 bg-gray flex items-center space-x-2 mt-2">
       <div className="text-white h-6 w-6 flex justify-center">
         <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
       </div>
       <p className="smooth-scroll p-3 md:p-3">
-      <b>Executives, Managers, and Professionals in Corporate Settings : </b>
-       Great for those looking to enhance their leadership and 
-        decision-making 
-      skills to drive their teams and businesses forward
+      <b>
+      Executives, Managers , and Professionals in Corporate Settings : </b>
+      Great for those looking to enhance their leadership and decision-making skills to drive their
+       teams and businesses forward
+      </p>
+    </div>
+
+      {/* 4th point */}
+      <div className="radius-yellow rounded-xl px-2 bg-gray flex items-center space-x-2 mt-2">
+      <div className="text-white h-6 w-6 flex justify-center">
+        <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
+      </div>
+      <p className="smooth-scroll p-3 md:p-3">
+      <b>
+      Freelancers and Consultants :</b>
+      Beneficial for those looking to expand their client base , improve their service offerings
+      , and enhance their professional skills
 
       </p>
     </div>

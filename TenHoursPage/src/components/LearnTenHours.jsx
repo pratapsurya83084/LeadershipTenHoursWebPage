@@ -95,7 +95,7 @@ const LearnTenHours = () => {
               04
             </div>
             <div className="font-bold px-4 py-7">
-            10+ Customizable Sales and Negotiation Templates
+            10+ Template Step-by-step guides on implementing learned skills
 
             </div>
           </div>
@@ -106,7 +106,7 @@ const LearnTenHours = () => {
               05
             </div>
             <div className="font-bold px-4 py-7 mt-4">
-            15+ Downloadable Cheat Sheet for Effective Negotiations
+            8+ Best Toolkits and Software Trials
 
             </div>
           </div>
@@ -117,7 +117,7 @@ const LearnTenHours = () => {
               06
             </div>
             <div className="font-bold px-4 py-7">
-            20+ Exclusive E-Books on Advanced Sales Techniques
+            100+ Access to a curated articles, videos, and case studies library
 
             </div>
           </div>

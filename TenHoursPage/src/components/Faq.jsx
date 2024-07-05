@@ -126,7 +126,7 @@ const Faq = () => {
               <h1
                 className={`mt-3 ${isOpen ? "text-yellow-200" : "text-white"}`}
               >
-                What is the Sales and Negotiation Mastery Workshop about?
+               What is the duration of the course?
               </h1>
             </div>
             <div>
@@ -141,9 +141,7 @@ const Faq = () => {
                 }`}
               >
                 <p className="text-xl">
-                  The workshop is designed to equip participants with advanced
-                  sales techniques and negotiation strategies to enhance their
-                  business performance.
+                The course spans over 10+ hours , offering comprehensive training on various essential skills.
                 </p>
               </div>
             </div>
@@ -159,7 +157,7 @@ const Faq = () => {
           >
             <div>
               <h1 className={`mt-3 ${q2 ? "text-yellow-200" : "text-white"}`}>
-                Who should attend this workshop?
+              What topics will be covered in the training?
               </h1>
             </div>
             <div>
@@ -174,9 +172,8 @@ const Faq = () => {
                 }`}
               >
                 <p className="text-xl">
-                  Entrepreneurs, business owners, sales professionals, and
-                  anyone looking to improve their negotiation skills and close
-                  more deals effectively.
+                The course covers 20+ skills including sales techniques , negotiation strategies , team leadership ,
+                 time management , digital marketing , and more.
                 </p>
               </div>
             </div>
@@ -192,7 +189,7 @@ const Faq = () => {
           >
             <div>
               <h1 className={`mt-3 ${q3 ? "text-yellow-200" : "text-white"}`}>
-                What will I learn during the workshop?
+              Who is the course designed for?
               </h1>
             </div>
             <div>
@@ -207,9 +204,11 @@ const Faq = () => {
                 }`}
               >
                 <p className="text-xl">
-                  Participants will learn proven methods to strengthen their
-                  sales pitch, handle objections, and negotiate favorable
-                  outcomes.
+                This course is perfect for individuals with startup ventures ,
+                 established businesses , sales professionals , management students ,
+                  small business owners , corporate executives , freelancers , consultants 
+                  , and students.
+
                 </p>
               </div>
             </div>
@@ -224,7 +223,8 @@ const Faq = () => {
           >
             <div>
               <h1 className={`mt-3 ${q4 ? "text-yellow-200" : "text-white"}`}>
-                How long is the workshop?
+              What is the cost of the course?
+
               </h1>
             </div>
             <div>
@@ -239,8 +239,8 @@ const Faq = () => {
                 }`}
               >
                 <p className="text-xl">
-                  The workshop is 3 hours long, packed with practical insights
-                  and interactive exercises
+                The course is available for only Rs approx 25000/- + only.
+
                 </p>
               </div>
             </div>
@@ -256,7 +256,8 @@ const Faq = () => {
           >
             <div>
               <h1 className={`mt-3 ${q5 ? "text-yellow-200" : "text-white"}`}>
-                Are there any prerequisites to attend?
+              Is there any certification provided upon completion?
+
               </h1>
             </div>
             <div>
@@ -271,9 +272,7 @@ const Faq = () => {
                 }`}
               >
                 <p className="text-xl">
-                  No specific prerequisites are required. The workshop is
-                  designed to benefit individuals at all skill levels in sales
-                  and negotiation.
+                Yes, attendees will receive an official certificate recognizing their completion of the course.
                 </p>
               </div>
             </div>
@@ -288,7 +287,7 @@ const Faq = () => {
           >
             <div>
               <h1 className={`mt-3 ${q6 ? "text-yellow-200" : "text-white"}`}>
-                Will there be networking opportunities?
+              How can I enroll in the course?
               </h1>
             </div>
             <div>
@@ -303,8 +302,7 @@ const Faq = () => {
                 }`}
               >
                 <p className="text-xl">
-                  Yes, participants will have opportunities to network with
-                  peers and share experiences during the workshop.
+                You can enroll by visiting our registration page and following the prompts to secure your spot.
                 </p>
               </div>
             </div>
@@ -320,7 +318,7 @@ const Faq = () => {
           >
             <div>
               <h1 className={`mt-3 ${q7 ? "text-yellow-200" : "text-white"}`}>
-                What materials will be provided?
+              What if I have questions during the course?
               </h1>
             </div>
             <div>
@@ -335,9 +333,8 @@ const Faq = () => {
                 }`}
               >
                 <p className="text-xl">
-                  Participants will receive workshop materials, including
-                  handouts and access to online resources, to support their
-                  learning.
+                You can reach out to our support team via email at ceobishophumane@bisjhintus.com for any queries.
+
                 </p>
               </div>
             </div>
@@ -353,7 +350,7 @@ const Faq = () => {
           >
             <div>
               <h1 className={`mt-3 ${q8 ? "text-yellow-200" : "text-white"}`}>
-                Is this workshop suitable for beginners or advanced learners?
+                Can I access the course materials after the training?
               </h1>
             </div>
             <div>
@@ -368,9 +365,7 @@ const Faq = () => {
                 }`}
               >
                 <p className="text-xl">
-                  The workshop caters to individuals at all stages of their
-                  career—from beginners looking to build foundational skills to
-                  experienced professionals aiming to refine their techniques.
+                Yes, all course materials will be accessible to attendees even after the training is completed.
                 </p>
               </div>
             </div>
@@ -386,7 +381,7 @@ const Faq = () => {
           >
             <div>
               <h1 className={`mt-3 ${q9 ? "text-yellow-200" : "text-white"}`}>
-                Can I apply what I learn immediately in my job or business?
+              Are there any prerequisites for attending the course?
               </h1>
             </div>
             <div>
@@ -401,9 +396,7 @@ const Faq = () => {
                 }`}
               >
                 <p className="text-xl">
-                  Yes, the workshop focuses on practical skills that can be
-                  applied right away to improve sales performance and
-                  negotiation outcomes.
+                There are no specific prerequisites ; however, a keen interest in business growth and development is recommended.
                 </p>
               </div>
             </div>
@@ -419,7 +412,7 @@ const Faq = () => {
           >
             <div>
               <h1 className={`mt-3 ${q10 ? "text-yellow-200" : "text-white"}`}>
-                Will there be a certificate of completion?
+              What kind of support is available after the course?
               </h1>
             </div>
             <div>
@@ -434,8 +427,7 @@ const Faq = () => {
                 }`}
               >
                 <p className="text-xl">
-                  Yes, participants will receive a certificate of completion at
-                  the end of the workshop.
+                We offer ongoing support and additional resources to help you apply the skills learned in the course to your professional life.
                 </p>
               </div>
             </div>
@@ -451,7 +443,7 @@ const Faq = () => {
           >
             <div>
               <h1 className={`mt-3 ${q11 ? "text-yellow-200" : "text-white"}`}>
-              What are the main benefits of attending this workshop?
+              How will this course benefit my career or business?
               </h1>
             </div>
             <div>
@@ -466,9 +458,9 @@ const Faq = () => {
                 }`}
               >
                 <p className="text-xl">
-                Participants will gain confidence in their negotiation
-                 abilities, learn effective sales strategies, 
-                and achieve better results in business dealings.
+                This course provides practical skills and strategies that can lead to improved business performance , increased sales ,
+                 better leadership
+                , and overall professional growth.
                 </p>
               </div>
             </div>

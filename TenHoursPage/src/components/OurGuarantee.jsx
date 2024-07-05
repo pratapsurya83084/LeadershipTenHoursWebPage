@@ -75,15 +75,16 @@ const OurGuarantee = () => {
       Our Guarantee
     </h1>
     <p class="smooth-scroll  md:text-xl p-2  lg:text-2xl">
-      Take advantage of this incredible offer now for only Rs 25499 , with a money-back 
-      guarantee included. Enroll today, attend our seminar, and if you're not satisfied 
-      for any reason, just send us an email, and we'll refund your entire payment—no 
-      questions asked!
+    Take advantage of this incredible offer 
+    designed just for you. Enroll today and join
+     me to unlock valuable insights and strategies 
+     that can transform your business and professional life. This is a limited-time opportunity to access top-tier training at an unbeatable price. Don’t miss out on the chance to elevate your skills 
+    and achieve your goals—secure your spot now!
     </p>
   </div>
 
   <div class="smooth-scroll  py-10 flex justify-center">
-    <img class=" w-64 md:w-[700px] h-auto" 
+    <img class=" w-64 md:w-[900px] h-auto" 
          src="\guarantee_gold_icon.webp" 
          alt="Clear Image"/>
   </div>
