@@ -54,10 +54,10 @@ const TextCards = () => {
               src="\seller_270682.png"
               alt=""
             />
-            <h3 className="text-lg font-semibold text-yellow-200">
+            <h3 className="md:mb-5  text-lg font-semibold text-yellow-200">
               Entrepreneurship
             </h3>
-            <p className="my-9 px-5">
+            <p className="my-6 sm:px-5">
               As the CEO and Founder of BISJHINTUS Private Limited, Mr. Adhikari
               has demonstrated exceptional leadership skills in building and
               guiding the company towards growth and success. BISJHINTUS is
@@ -69,18 +69,18 @@ const TextCards = () => {
 
     
         {/* cards2 */}
-        <figure className="  smooth-scroll m-5 flex flex-col items-center justify-center p-8 text-center radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
+        <figure className="  smooth-scroll m-5 flex flex-col items-center justify-center p-1 sm:p-8 text-center radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
           <blockquote className="max-w-2xl mx-auto mb-4 lg:mb-8 flex flex-col items-center">
             <img
-              className="h-10 mb-2 bg-yellow-400 rounded-full"
+              className="h-10 mb-2 mt-2 sm:mt-0 bg-yellow-400 rounded-full"
               // src="\doctor_12106342.png"
-              src="https://cdn-icons-png.freepik.com/512/14141/14141098.png?uid=R153977336&ga=GA1.1.1066618313.1718467903"
+              src="\pharmatical_bottol_image.png"
               alt=""
             />
             <h3 className="text-lg font-semibold text-yellow-200">
               Pharmaceutical Expertise
             </h3>
-            <p className="my-6">
+            <p className=" my-6">
               In addition to his role at BISJHINTUS, Mr. Adhikari is a
               trailblazer in the Pharmaceutical sector. He is the Founder of
               Ricabi Life Science, where he held the position of CXO, and
@@ -92,17 +92,17 @@ const TextCards = () => {
         </figure>
 
         {/* cards3 */}
-        <figure className="smooth-scroll m-5 flex flex-col items-center  justify-center p-8 text-center  radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
+        <figure className="smooth-scroll m-5 flex flex-col items-center  justify-center sm:p-8 text-center  radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
           <blockquote className="max-w-2xl mx-auto mb-4  lg:mb-8 flex flex-col items-center">
             <img
-              className="h-10 mb-2"
+              className="h-10 mt-2 sm:mt-0 mb-4"
               src="\social-marketing_8862572.png"
               alt=""
             />
             <h3 className="text-lg font-semibold mb-3 text-yellow-200">
               Social Activism
             </h3>
-            <p className="my-2 p-3">
+            <p className="my-2 md:my-0 p-3">
               Mr. Adhikari's commitment to social causes is commendable. As a
               public speaker and renowned trainer, he has been actively involved
               in empowering individuals and bridging linguistic diversity.
@@ -113,9 +113,9 @@ const TextCards = () => {
         </figure>
 
         {/* card4 */}
-        <figure className="smooth-scroll m-5 flex flex-col items-center  justify-center p-8 text-center  radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
+        <figure className="smooth-scroll m-5 flex flex-col items-center  justify-center sm:p-8 text-center  radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
           <blockquote className="max-w-2xl mx-auto mb-4  lg:mb-8 flex flex-col items-center ">
-            <img className="h-10 mb-2" src="\stakeholder_7740876.png" alt="" />
+            <img className="mt-2 sm:mt-0 h-10 mb-2" src="\stakeholder_7740876.png" alt="" />
             <h3 className="text-lg font-semibold  text-yellow-200">
               Business Consultant and Associate
             </h3>
@@ -130,17 +130,17 @@ const TextCards = () => {
         </figure>
 
         {/* card5 */}
-        <figure className="smooth-scroll m-5 flex flex-col items-center  justify-center p-8 text-center  radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
+        <figure className="smooth-scroll m-5 flex flex-col items-center  justify-center  sm:p-8 text-center  radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
           <blockquote className="max-w-2xl mx-auto mb-4  lg:mb-8 flex flex-col items-center ">
             <img
-              className="h-10 mb-2"
+              className="h-10 mt-2 sm:mt-0 mb-2"
               src="\crisis-management_7806234.png"
               alt=""
             />
             <h3 className="text-lg font-semibold  text-yellow-200">
               Independent Director and Philanthropy
             </h3>
-            <p className="my-7">
+            <p className="my-7 md:my-10">
               Mr. Adhikari serves as an Independent Director for the Core NGO, a
               network of seven NGOs dedicated to addressing critical social
               issues. His involvement in this capacity showcases his dedication
@@ -150,14 +150,14 @@ const TextCards = () => {
         </figure>
 
         {/* card6 */}
-        <figure className="smooth-scroll m-5 flex flex-col items-center  justify-center p-8 text-center  radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
+        <figure className="smooth-scroll m-5 flex flex-col items-center  justify-center sm:p-8 text-center  radius-yellow rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e bg-custom-gray">
           <blockquote className="max-w-2xl mx-auto mb-4  lg:mb-8 flex flex-col items-center">
-            <img className="h-10 mb-2 bg-yellow-400 rounded-full p-1"
+            <img className="h-10 mt-2 sm:mt-0 mb-4 bg-yellow-400 rounded-full p-1"
              src="\signpost_13452511.png" alt="" />
             <h3 className="text-lg font-semibold  text-yellow-200">
               Educational Journey
             </h3>
-            <p className="my-9 p-">
+            <p className="my-10 p-">
               Alongside his successful professional journey, Mr. Adhikari is a
               Ph.D. candidate, driven by a thirst for knowledge. He has proven
               himself to be a lifelong learner and a highly accomplished

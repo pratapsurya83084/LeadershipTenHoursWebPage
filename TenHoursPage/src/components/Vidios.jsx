@@ -99,7 +99,7 @@ const Vidios = () => {
             className="block rounded-xl"
           ></iframe>
         </div> */}
-        <div className="video-2 p-2">
+        <div className="video-2 p-">
           <iframe
             width="100%"
             height="215"
@@ -110,7 +110,7 @@ const Vidios = () => {
             className=" smooth-scroll block rounded-3xl radius-yellow"
           ></iframe>
         </div>
-        <div className="video-2 p-2">
+        <div className="video-2 p-">
           <iframe
             width="100%"
             height="215"
