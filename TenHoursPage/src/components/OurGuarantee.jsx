@@ -84,8 +84,8 @@ const OurGuarantee = () => {
   </div>
 
   <div class="smooth-scroll  py-10 flex justify-center">
-    <img class=" w-64 md:w-[900px] h-auto" 
-         src="\guarantee_gold_icon.webp" 
+    <img class=" w-64 md:w-[900px] rounded-full h-auto" 
+         src="\golden_image.jpg" 
          alt="Clear Image"/>
   </div>
 </div>

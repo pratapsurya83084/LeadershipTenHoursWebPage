@@ -34,7 +34,7 @@ const CoachSection = () => {
 
   return (
     <section ref={sectionRef}>
-    <div className="flex flex-col items-center bg-black text-white p-8">
+    <div className="flex flex-col items-center bg-black  text-white p-8">
       <h1 className="smooth-scroll text-xl md:text-2xl lg:text-3xl font-bold mb-4 text-center">
         Get Acquainted with Your Coach
       </h1>
@@ -87,7 +87,9 @@ const CoachSection = () => {
 
      
        {/* cards */}
-      <div className="smooth-scroll  justify-around flex-wrap  grid grid-cols sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full  mt-8 gap-5  md:gap-x-   lg:gap-x-29 xl-gap-x-10 2xl:ml-[75px]">
+       {/* sm:gap-10 */}
+        {/* cards */}
+        <div className="smooth-scroll  justify-around flex-wrap  grid grid-cols sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full  mt-8 gap-5  md:gap-x-   lg:gap-x-29 xl-gap-x-10 2xl:ml-[75px]">
         {/* cards1 */}
         <div className="radius-yellow flex flex-row m-2 items-center w-[300px] h-[170px]  bg-custom-brown text-white rounded-2xl p-4   min-w-[200px]">
           <div>
@@ -100,7 +102,7 @@ const CoachSection = () => {
             <h1 className="pl-32 mb-32 p-2">
               <img
                 className="smooth-scroll bg-yellow-200 mt-2 rounded-xl p-2"
-                src="https://cdn-icons-png.flaticon.com/512/12274/12274982.png"
+                src="\coachSection_img1.png"
                 alt=""
               />
             </h1>
@@ -117,7 +119,7 @@ const CoachSection = () => {
             <h1 className="pl-40 mb-20 ml-4 mt-2 p- h-20">
               <img
                 className="smooth-scroll bg-yellow-200  rounded-xl p-2"
-                src="https://cdn-icons-png.flaticon.com/512/10412/10412528.png"
+                src="\coachSection_img2.png"
                 alt=""
               />
             </h1>
@@ -135,7 +137,7 @@ const CoachSection = () => {
           <div className="pl-32 mb-20 ml-4 mt-2 p- h-20">
             <img
               className="smooth-scroll bg-yellow-200 rounded-xl mt-2"
-              src="https://cdn-icons-png.flaticon.com/512/8660/8660446.png"
+              src="\coachSection_img3.png"
               alt=""
             />
           </div>
@@ -150,7 +152,7 @@ const CoachSection = () => {
           <div className="  pl-36  mt-2 mb-32   p- h-">
             <img
               className="smooth-scroll bg-yellow-200  rounded-xl"
-              src="https://cdn-icons-png.flaticon.com/512/8436/8436354.png"
+              src="\coachSection_img4.png"
               alt=""
             />
           </div>
@@ -165,7 +167,7 @@ const CoachSection = () => {
           <div className="pl-36  mt-6 mb-32  ">
             <img
               className="smooth-scroll bg-yellow-200  h-10 w-14 rounded-xl p-1"
-              src="https://cdn-icons-png.flaticon.com/512/2065/2065064.png"
+              src="\coachSection_img5.png"
               alt=""
             />
           </div>
@@ -180,7 +182,7 @@ const CoachSection = () => {
           <div className="pl-36  mt-6 mb-32  ">
             <img
               className="smooth-scroll bg-yellow-200 rounded-xl p-1"
-              src="https://cdn-icons-png.flaticon.com/512/4270/4270578.png"
+              src="\coachSection_img6.png"
               alt=""
             />
           </div>
@@ -197,7 +199,7 @@ const CoachSection = () => {
           <div className="pl-40  mt-6 mb-32  ">
             <img
               className="bg-yellow-200  rounded-xl p-1"
-              src="https://cdn-icons-png.flaticon.com/512/12077/12077752.png"
+              src="\coachSection_img7.png"
               alt=""
             />
           </div>
@@ -214,7 +216,7 @@ const CoachSection = () => {
           <div className="pl-40 p- mt-6 mb-32  ">
             <img
               className="smooth-scroll bg-yellow-200 rounded p-"
-              src="https://cdn-icons-png.flaticon.com/512/3246/3246663.png"
+              src="\coachSection_img8.png"
               alt=""
             />
           </div>
@@ -230,7 +232,7 @@ const CoachSection = () => {
           <div className="pl-40 p- mt-6 mb-32  ">
             <img
               className="smooth-scroll bg-yellow-200 rounded-xl p-1"
-              src="https://cdn-icons-png.flaticon.com/512/10822/10822370.png"
+              src="\coachSection_img9.png"
               alt=""
             />
           </div>
@@ -247,7 +249,7 @@ const CoachSection = () => {
           <div className="pl-36 p-2 mt-6 mb-32 ">
             <img
               className="smooth-scroll bg-yellow-200 rounded-xl p-1"
-              src="https://cdn-icons-png.flaticon.com/512/9323/9323726.png"
+              src="\coachSection_img10.png"
               alt=""
             />
           </div>
@@ -264,7 +266,7 @@ const CoachSection = () => {
           <div className="pl-36 p- mt-6 mb-32 ">
             <img
               className="smooth-scroll bg-yellow-200 rounded-xl p-1"
-              src="https://cdn-icons-png.flaticon.com/512/9643/9643115.png"
+              src="\coachSection_img11.png"
               alt=""
             />
           </div>
@@ -279,7 +281,7 @@ const CoachSection = () => {
           <div className="pl-36  p-2 ml-10 mt-6 mb-32 ">
             <img
               className="smooth-scroll bg-yellow-200 rounded-xl p-1"
-              src="https://cdn-icons-png.flaticon.com/512/8087/8087183.png"
+              src="\coachSection_img12.png"
               alt=""
             />
           </div>
@@ -294,7 +296,7 @@ const CoachSection = () => {
           <div className="pl-32  p-2 ml-10 mt-6 mb-32 ">
             <img
               className="smooth-scroll bg-yellow-200 rounded-xl p-1"
-              src="https://cdn-icons-png.flaticon.com/512/2681/2681826.png"
+              src="\coachSection_img13.png"
               alt=""
             />
           </div>
@@ -312,12 +314,14 @@ const CoachSection = () => {
           <div className="pl-32  p-2 ml-10 mt-6 mb-32 ">
             <img
               className="smooth-scroll bg-yellow-200 rounded-xl p-1"
-              src="https://cdn-icons-png.flaticon.com/512/3395/3395949.png"
+              src="\coachSection_img14.png"
               alt=""
             />
           </div>
         </div>
       </div>
+
+
     </div>
   </section>
   )
