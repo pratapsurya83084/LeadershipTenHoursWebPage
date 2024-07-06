@@ -64,7 +64,7 @@ const InspiringFeedback = () => {
                 <img
                   alt="testimonial"
                   className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                  src="/public\ANKIT_KUMAR_img1.png"
+                  src="\ANKIT_KUMAR_img1.png"
                 />
                 <p className="leading-relaxed">
                 'I've had the privilege of attending over 100 workshops lead by Mr.Bishop,and 
@@ -84,7 +84,7 @@ const InspiringFeedback = () => {
                 <img
                   alt="testimonial"
                   className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                  src="/public\VAISHNAVI_UPADHYA_img2.png"
+                  src="\VAISHNAVI_UPADHYA_img2.png"
                 />
                 <p className="leading-relaxed">
                   "Regularly attending workshop conducted by Mr.Bishop Adhikari Has been a transformative experience ,igniting a profound  realization of my untapped potential. 
@@ -105,7 +105,7 @@ const InspiringFeedback = () => {
                 <img
                   alt="testimonial"
                   className="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
-                  src="/public\SANA_KAUSER_img3.png"
+                  src="\SANA_KAUSER_img3.png"
                 />
                 <p className="leading-relaxed">
                  "I" ve gained invaluable knowledge and Mr.Bishop Adhikari ensures 

@@ -60,7 +60,7 @@ const CoachSection = () => {
       <div className="flex flex-col justify-between items-center mt-36 radius-yellow bg-custom-brown md:flex-row h-52 lg:w-[600px] w-full rounded-3xl p-4 md:p-8">
         <div className="flex-shrink-0 flex flex-col items-center md:items-start relative  bottom-24 lg:right-32 ">
           <img
-            src="\public\Get Acquainted with Your Coach.png"
+            src="\Get Acquainted with Your Coach.png"
             className="smooth-scroll  radius-yellow rounded-3xl lg:h-[200px] h-[180px]"
             alt=""
           />
