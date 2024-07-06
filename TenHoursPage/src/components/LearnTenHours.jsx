@@ -117,7 +117,7 @@ const LearnTenHours = () => {
               06
             </div>
             <div className="font-bold px-4 py-7">
-            100+ Access to a curated articles, videos, and case studies library
+            100+ Access to a curated articles , videos, and case studies library
 
             </div>
           </div>

@@ -46,9 +46,9 @@ const FooterSection = () => {
   }
 
   // Format nextSaturday date and day
-  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-  const formattedDate = nextSaturday.toLocaleDateString('en-US', options);
-    
+  // const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  // const formattedDate = nextSaturday.toLocaleDateString('en-US', options);
+    // console.log(formattedDate);
   return (
     <footer>
     {/* sm:flex-row sm:justify-between */}
@@ -59,7 +59,10 @@ const FooterSection = () => {
     {/* Blinking text */}
     <h2 className='blinking text-center'>Only 2 Seats Left</h2>
     </div>
-     <p className=' font-bold px-2 text-center'>Enrollment closes on 5.00 AM  {formattedDate}</p>
+     <p className=' font-bold px-2 text-center'>Enrollment closes on 5.00 AM Saturday
+      {/* {formattedDate} */}
+  
+      </p>
   </div>
   
   {/* action button */}

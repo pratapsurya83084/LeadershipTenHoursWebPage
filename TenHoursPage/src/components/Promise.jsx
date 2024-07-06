@@ -78,7 +78,7 @@ const Promise = () => {
             <span className=" text-yellow-200 ml-2">
               ceobishophumane@bisjhintus.com
             </span>{" "}
-            , and my team will promptly address your queries
+            , and my team will promptly address your queries .
           </p>
           <p className="smooth-scroll mt-10">
             Best Regards ,

@@ -91,7 +91,7 @@ const SeminarSection = () => {
       </div>
       <p className="smooth-scroll p-3 md:p-3">
       <b>
-      Freelancers and Consultants :</b>
+      Freelancers and Consultants : </b>
       Beneficial for those looking to expand their client base , improve their service offerings
       , and enhance their professional skills
 
@@ -135,7 +135,7 @@ const SeminarSection = () => {
 </div>
       </div>
       <p className="smooth-scroll *:p-3 md:p-3">
-     <b>Non-Leaders : </b>  Individuals who don't see themselves as leaders may not benefit from this training
+     <b>Non-Leaders :</b>Individuals who don't see themselves as leaders may not benefit from this training
       </p>
     </div>
 
