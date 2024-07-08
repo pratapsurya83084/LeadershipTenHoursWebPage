@@ -77,14 +77,11 @@ const CompanyPicture = () => {
         {/* right side text and button */}
         <div className="text-center">
           <h1 className="text-2xl lg:text-3xl font-bold p-2">
-            Commemorate your workshop achievements
+           Celebrate Your Achievement
           </h1>
           <p>
-            Upon the completion of the workshop,you'll receive an official
-            certificate validating your successful participation in the
-            <br />
-            2-day Entrepreneurship & Management Workshop,signifying your mastery
-            of key business fundamentals
+          Receive a certificate after completing the 10 Hours of LIVE training
+          
           </p>
           <a href="https://pages.razorpay.com/leadershipcourse"> 
             <button className="mt-2 md:mt-10 bg-blue-600 p-2 rounded-xl sm:text-xl font-bold">

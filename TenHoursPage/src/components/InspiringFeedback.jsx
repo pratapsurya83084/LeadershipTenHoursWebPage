@@ -68,14 +68,14 @@ const InspiringFeedback = () => {
                 />
                 <p className="leading-relaxed">
                 'I've had the privilege of attending over 100 workshops lead by Mr.Bishop,and 
-                I must say ,his innovative ideas couldn't be more timely.
+                I must say ,his innovative ideas couldn't be more timely."
                 </p>
                 <span className="inline-block h-1 w-10 rounded bg-yellow-300 mt-6 mb-4"></span>
                 <h2 className=" font-medium title-font tracking-wider text-sm">
                  Ankit Kumar <br />
                  Student
                 </h2>
-                <p className=""> Indian School of Management ,Patana</p>
+                <p className=""> Indian School of Management , Patana</p>
               </div>
             </div>
             {/* card2 */}
@@ -95,7 +95,7 @@ const InspiringFeedback = () => {
               Vaishnavi Upadhyay <br />
               Student
                 </h2>
-                <p className=""> Alliance School of Law ,Bengluru </p>
+                <p className=""> Alliance School of Law , Bengluru </p>
               </div>
             </div>
 
@@ -108,15 +108,15 @@ const InspiringFeedback = () => {
                   src="\SANA_KAUSER_img3.png"
                 />
                 <p className="leading-relaxed">
-                 "I" ve gained invaluable knowledge and Mr.Bishop Adhikari ensures 
+                 "I' ve gained invaluable knowledge and Mr.Bishop Adhikari ensures 
                  no  dull moments ,and i am confident with him growth 
-                 is inevitable.
+                 is inevitable."
                 </p>
                 <span className="inline-block h-1 w-10 rounded bg-yellow-300 mt-6 mb-4"></span>
                 <h2 className="font-medium title-font tracking-wider text-sm">
                   Sana Kauser <br />Student
                 </h2>
-                <p className=""> Indian institute of Legal Studies ,Siliguri</p>
+                <p className=""> Indian institute of Legal Studies , Siliguri</p>
               </div>
             </div>
           </div>

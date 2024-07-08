@@ -77,7 +77,7 @@ const TenHouresSection = () => {
             <i>Entrepreneur, coach and social change advocate</i>
           </h2>
           <p className="smooth-scroll">
-            Weekly,pick from a pool of
+            Weekly , pick from a pool of
             <strong className="font-bold px-2">200+</strong>
             skills across
             <strong className="font-bold px-2">20+</strong>
