@@ -2,6 +2,7 @@
   "name": "tenhourspage",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://course.bishopadhikari.com",
   "type": "module",
   "scripts": {
     "dev": "vite",
