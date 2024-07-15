@@ -22,12 +22,14 @@ import OurGuarantee  from '../components/OurGuarantee'
 import Promise  from '../components/Promise'
 import Faq   from '../components/Faq'
 import CompanyLogo  from '../components/CompanyLogo'
+import NewsFeatureSection  from '../components/NewsFeatureSection'
 const Home = () => {
   return (
     <>
       <Headers/>
       <TenHouresSection/>
     <GrowthIcons/>
+    <NewsFeatureSection/>
     <SingleVidioSection/>
     <InspiringFeedback/>
     <RevenuePicture/>

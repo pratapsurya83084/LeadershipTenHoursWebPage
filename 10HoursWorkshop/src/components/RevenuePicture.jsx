@@ -36,7 +36,7 @@ const sectionRef = useRef(null);
   }, []);
 
   const points = [
-    "Action-Oriented 3 Hours",
+    "Action-Oriented 10 Hours",
     "Networking Pro Secrets",
     "Tailored Negotiation Tactical Goals"
   ];
@@ -93,7 +93,7 @@ const sectionRef = useRef(null);
         <ol className="list-decimal list-inside text-left space-y-2">
           {points.map((point, index) => (
             <li key={index} className="smooth-scroll flex items-center text-yellow-200 rounded-xl px-4 py-2">
-              <div className="h-5 w-6 flex justify-center items-center mb-0 bg-yellow-200 rounded-full mr-3">
+              <div className=" sm:h-6 sm:w-6  flex justify-center items-center mb-0 bg-yellow-200 rounded-full mr-3">
                 <CheckIcon className="h-4 w-4 font-bold text-black" />
               </div>
               <span className="smooth-scroll">{point}</span>

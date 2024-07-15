@@ -86,10 +86,10 @@ const CoachSection = () => {
       </div>
 
      
-       {/* cards */}
+       
        {/* sm:gap-10 */}
         {/* cards */}
-        <div className="smooth-scroll  justify-around flex-wrap  grid grid-cols sm:grid-cols-2  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 w-full  mt-8 gap-5  md:gap-x-   lg:gap-x-29 xl-gap-x-10 2xl:ml-[75px]">
+        <div className="smooth-scroll  flex flex-wrap justify-center  mt-8">
         {/* cards1 */}
         <div className="radius-yellow flex flex-row m-2 items-center w-[300px] h-[170px]  bg-custom-brown text-white rounded-2xl p-4   min-w-[200px]">
           <div>
