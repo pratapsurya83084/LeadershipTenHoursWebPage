@@ -40,7 +40,8 @@ const LearnTenHours = () => {
         className="fourHours-learnSection-section">
       <div className="flex flex-col justify-center items-center mx-10 mt-10">
         <h1 className="smooth-scroll  text-center text-xl md:text-2xl lg:text-3xl font-bold">
-        These 10 hours will revolutionize your approach with advanced sales and negotiation techniques and strategies
+        {/* These 10 hours will revolutionize your approach with advanced sales and negotiation techniques and strategies */}
+        These 10 hours will revolutionize your approach to sales with advanced negotiation techniques and strategies
         </h1>
         <div className="smooth-scroll flex justify-center mb-4">
           <svg
@@ -74,8 +75,8 @@ const LearnTenHours = () => {
               02
             </div>
             <div className="font-bold px-4 mt-2 py-7">
-            1+ Hour Free Consultation business analytic session with me
-
+            {/* 1+ Hour Free Consultation business analytic session with me */}
+            1+ Hour Free Consultation Business Analytical Session with me
             </div>
           </div>
 
@@ -117,7 +118,7 @@ const LearnTenHours = () => {
               06
             </div>
             <div className="font-bold px-4 py-7">
-            100+ Access to a curated articles , videos, and case studies library
+            100+ Access to a curated articles , videos , and case studies library
 
             </div>
           </div>

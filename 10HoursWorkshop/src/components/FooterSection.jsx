@@ -14,7 +14,7 @@ const FooterSection = () => {
             <h2 className="blinking text-center">Only 2 Seats Left</h2>
           </div>
           <p className=" font-bold px-2 text-center">
-            Enrollment closes on 5.00 AM
+            Enrollment closes at 5.00 am
             {/* {formattedDate} */}
           </p>
         </div>

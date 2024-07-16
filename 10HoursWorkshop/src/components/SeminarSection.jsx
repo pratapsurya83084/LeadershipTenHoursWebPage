@@ -54,8 +54,7 @@ const SeminarSection = () => {
         <CheckIcon className="h-4 w-4 bg-green-500 rounded-full" />
       </div>
       <p className="smooth-scroll p-3 md:p-3">
-      <b>Individuals with Startup Ventures or Established Businesses ,
-         Professionals , and Professionals and General Students :
+      <b>Individuals with Startup Ventures or established businesses, professionals and and General Students :
         </b> Perfect for those seeking to improve their 20+ skills for business growth
 
       </p>
@@ -78,7 +77,7 @@ const SeminarSection = () => {
       </div>
       <p className="smooth-scroll p-3 md:p-3">
       <b>
-      Executives, Managers , and Professionals in Corporate Settings : </b>
+      Executives , Managers  and Professionals in Corporate Settings : </b>
       Great for those looking to enhance their leadership and decision-making skills to drive their
        teams and businesses forward
       </p>
@@ -92,8 +91,8 @@ const SeminarSection = () => {
       <p className="smooth-scroll p-3 md:p-3">
       <b>
       Freelancers and Consultants : </b>
-      Beneficial for those looking to expand their client base , improve their service offerings
-      , and enhance their professional skills
+      Beneficial for those looking to expand their Client base , improve their service offerings
+       and enhance their professional skills
 
       </p>
     </div>
@@ -134,7 +133,7 @@ const SeminarSection = () => {
     <span className="sr-only">Error icon</span>
 </div>
       </div>
-      <p className="smooth-scroll *:p-3 md:p-3">
+      <p className="smooth-scroll p-3 md:p-3">
      <b>Non-Leaders :</b>Individuals who don't see themselves as leaders may not benefit from this training
       </p>
     </div>

@@ -34,7 +34,10 @@ const SingleVidio = () => {
     ref={sectionRef}
     className='mt-10 rounded-3xl bg-custom-brown radius-yellow'>
        <h2 className='smooth-scroll text-xl md:text-2xl lg:text-3xl font-bold text-center p-4'>
-       10x% empowering your journey to financial triumph through strategic revenue goals for future with this programe</h2>
+       {/* 10x% empowering your journey to financial triumph through strategic revenue goals for future with this programe */}
+       Empower your journey by 10x to a brilliant future through strategic revenue goals 
+       with this programme
+       </h2>
        <div className="flex justify-center mb-4">
           <svg
             width="400"

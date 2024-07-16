@@ -40,7 +40,7 @@ const TextCards = () => {
         Mr. Bishop Adhikari is a dynamic and multifaceted individual , excelling
         in various fields. He is an entrepreneur , social activist and a prominent
         figure in the realm of leadership and management. With a passion for
-        innovation and a vision for a better future,he has founded and led
+        innovation and a vision for a better future , he has founded and led
         multiple successful ventures
       </h1>
       {/* radius-yellow */}
@@ -122,7 +122,7 @@ const TextCards = () => {
             <p className="my-7">
               Mr. Adhikari's expertise extends to consulting and training as a
               full-time associate at McKinsey , a reputable business consulting
-              firm. His vast experience and knowledge have helped countless
+              firm. His vast experience and knowledge has helped countless
               businesses achieve their goals and improve their overall
               performance
             </p>

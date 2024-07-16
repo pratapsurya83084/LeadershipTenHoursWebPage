@@ -1,4 +1,3 @@
-
 import React ,{useEffect,useRef} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGreaterThan } from "@fortawesome/free-solid-svg-icons";
@@ -37,9 +36,10 @@ const sectionRef = useRef(null);
 
   const points = [
     "Action-Oriented 10 Hours",
-    "Networking Pro Secrets",
-    "Tailored Negotiation Tactical Goals"
+    "Pro Secrets for Networking",
+    "Tailored Goals for Negotiation Tactics"
   ];
+
   return (
     <section 
     ref={sectionRef}
@@ -48,7 +48,7 @@ const sectionRef = useRef(null);
         <h4 className="smooth-scroll text-xl  md:text-2xl lg:text-3xl">
         Guiding Your Journey to  <b>Exceptional Leadership </b> Through <b>
         Personalized Coaching </b> and
-        <b>Skill Enhancement</b>
+        <b className="px-2">Skill Enhancement</b>
 
         </h4>
         <div className="smooth-scroll flex justify-center mb-4">
@@ -84,7 +84,8 @@ const sectionRef = useRef(null);
         </div>
 
         <h1 className="smooth-scroll text-xl font-bold p-4 mt-4 md:text-2xl lg:text-3xl xl:text-3xl">
-          Just look a view how much they closed the deal
+          {/* Just look a view how much they closed the deal */}
+          Just have a view at how much they closed the deal
         </h1>
         <br />
 

@@ -83,9 +83,13 @@ const TenHouresSection = () => {
             <strong className="font-bold px-2">20+</strong>
             distinct categories,
             <br />
-            allowing you to choose
-            <strong className="font-bold px-2">5 distinct categories</strong>
-            that align with your interests and goals
+            allowing you to  Choose  
+            <strong className="font-bold px-2">
+              {/* 5 distinct categories */}
+              five skills
+              </strong>
+            {/* that align with your interests and goals */}
+            that align with your goals weekly
           </p>
           <div className="mt-5 flex justify-center mb-10">
           <a href="https://pages.razorpay.com/leadershipcourse"> 

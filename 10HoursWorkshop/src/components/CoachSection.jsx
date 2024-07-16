@@ -77,7 +77,8 @@ const CoachSection = () => {
             </p>
           </div>
         </div>
-        <div className=" hidden  md:flex md:mt-0 md:ml- flex-grow  items-center justify-center md:justify-start">
+        {/* flex-grow */}
+        <div className=" hidden  md:flex md:mt-0 md:ml-   items-center justify-center md:justify-start">
           {/* <h1 className="text-2xl font-bold text-center">Decision Business Coach</h1> */}
        <img 
        className="smooth-scroll h-40 md:ml-40 lg:ml-2 bg-yellow-300 rounded-3xl p-2"

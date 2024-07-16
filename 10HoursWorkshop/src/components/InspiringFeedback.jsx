@@ -67,8 +67,8 @@ const InspiringFeedback = () => {
                   src="\ANKIT_KUMAR_img1.png"
                 />
                 <p className="leading-relaxed">
-                'I've had the privilege of attending over 100 workshops lead by Mr.Bishop,and 
-                I must say ,his innovative ideas couldn't be more timely."
+                'I've had the privilege of attending over 100 workshops lead by
+                 Mr.Bishop , and I must say , his innovative ideas couldn't be more timely."
                 </p>
                 <span className="inline-block h-1 w-10 rounded bg-yellow-300 mt-6 mb-4"></span>
                 <h2 className=" font-medium title-font tracking-wider text-sm">
@@ -87,8 +87,10 @@ const InspiringFeedback = () => {
                   src="\VAISHNAVI_UPADHYA_img2.png"
                 />
                 <p className="leading-relaxed">
-                  "Regularly attending workshop conducted by Mr.Bishop Adhikari Has been a transformative experience ,igniting a profound  realization of my untapped potential. 
-                  i am convinced that my growth knows no bounds with Mr.Adhikari's guidance."
+                  "Regularly attending workshop conducted by Mr.Bishop Adhikari Has been a transformative experience
+                   , igniting a profound  realization of my untapped potential. 
+                  i am convinced that my growth knows no bounds with Mr.Adhikari's
+                   guidance."
                 </p>
                 <span className="inline-block h-1 w-10 rounded bg-yellow-300 mt-6 mb-4"></span>
                 <h2 className=" font-medium title-font tracking-wider text-sm">
@@ -109,7 +111,7 @@ const InspiringFeedback = () => {
                 />
                 <p className="leading-relaxed">
                  "I' ve gained invaluable knowledge and Mr.Bishop Adhikari ensures 
-                 no  dull moments ,and i am confident with him growth 
+                 no  dull moments , and I am confident with him growth 
                  is inevitable."
                 </p>
                 <span className="inline-block h-1 w-10 rounded bg-yellow-300 mt-6 mb-4"></span>
