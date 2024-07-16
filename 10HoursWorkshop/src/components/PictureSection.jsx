@@ -44,7 +44,7 @@ const PictureSection = () => {
           {/* first image */}
           <div className="flex justify-center">
             <img
-              className="smooth-scroll radius-yellow h-[230px] w-full sm:h-[200px] md:h-[200px] md:w-[570px] lg:h-[150px] xl:w-[400px] xl:h-[200px]  rounded-3xl object-cover"
+              className="smooth-scroll radius-yellow h-[300px] w-full sm:h-[200px] md:h-[200px] md:w-[570px] lg:h-[150px] xl:w-[400px] xl:h-[200px]  rounded-3xl object-cover"
               src="/ABOUTUS2_img1.jpg"
               alt="Mr. Bishop Adhikari Image 1"
             />
@@ -52,7 +52,7 @@ const PictureSection = () => {
           {/* second image */}
           <div className="smooth-scroll flex justify-center">
             <img
-              className="smooth-scroll radius-yellow h-[230px] w-full sm:h-[200px] md:h-[200px] md:w-[570px] lg:h-[150px] xl:w-[400px] xl:h-[200px]  rounded-3xl object-cover"
+              className="smooth-scroll radius-yellow h-[300px] w-full sm:h-[200px] md:h-[200px] md:w-[570px] lg:h-[150px] xl:w-[400px] xl:h-[200px]  rounded-3xl object-cover"
               src="\Screenshot 2024-07-16 002413.png"
               alt="Mr. Bishop Adhikari Image 2"
             />
@@ -60,7 +60,7 @@ const PictureSection = () => {
           {/* third image */}
           <div className="flex justify-center">
             <img
-              className="smooth-scroll radius-yellow h-[230px] w-full sm:h-[200px] md:h-[200px] md:w-[570px] lg:h-[150px] xl:w-[400px] xl:h-[200px]  rounded-3xl object-cover"
+              className="smooth-scroll radius-yellow h-[300px] w-full sm:h-[200px] md:h-[200px] md:w-[570px] lg:h-[150px] xl:w-[400px] xl:h-[200px]  rounded-3xl object-cover"
               src="/ABOUTUS3.jpg"
               alt="Mr. Bishop Adhikari Image 3"
             />
@@ -69,7 +69,7 @@ const PictureSection = () => {
           <div className="flex justify-center">
             <img
             // w-full
-              className="smooth-scroll radius-yellow h-[230px] w-full sm:h-[200px] md:h-[200px] md:w-[570px] lg:h-[150px] xl:w-[400px] xl:h-[200px] rounded-3xl object-cover"
+              className="smooth-scroll radius-yellow h-[300px] w-full sm:h-[200px] md:h-[200px] md:w-[570px] lg:h-[150px] xl:w-[400px] xl:h-[200px] rounded-3xl object-cover"
               src="\ABOUTUS4.jpg"
               alt="Mr. Bishop Adhikari Image 4"
             />

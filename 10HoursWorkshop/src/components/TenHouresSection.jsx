@@ -54,7 +54,7 @@ const TenHouresSection = () => {
             <img
               // md:ml-[200px] h-[500px],object-cover
               className="  radius-yellow  h-[300px] sm:mx-auto  sm:h-[500px] md:h-[460px]  xl:h-[400px] lg:w-[500px]    p-  w-full  rounded-3xl"
-              src="/MY PICTURE AT FIRST.png" // Make sure your image path is correct
+              src="\TRAINGS PAGE .png" // Make sure your image path is correct
               alt="WorkshopImage"
             />
             <h1 className="animate-move-x-reverse font-bold absolute mt-32 left-58  bottom-20 sm:bottom-40 md:bottom-40 lg:bottom-36  xl:bottom-52 md:mt-60 md:left-[450px] lg:left-[150px] lg:mt-[270px] right-0 text-4xl sm:text-4xl md:text-5xl lg:text-5xl lg:font-bold text-black mb-4 mr-4 lg:text-right">
