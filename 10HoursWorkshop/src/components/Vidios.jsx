@@ -35,8 +35,8 @@ const Vidios = () => {
     ref={sectionRef}
     >
       <h2 className=" smooth-scroll text-xl md:text-2xl lg:text-3xl font-bold text-center p-2 mt-4">
-        Engage in immersive learning and career
-         unleash your  full potential
+        Engage in immersive learning and career.
+         Unleash your  full potential
          {/* leadership brilliance */}
       </h2>
       <div className=" smooth-scroll flex justify-center mb-4">

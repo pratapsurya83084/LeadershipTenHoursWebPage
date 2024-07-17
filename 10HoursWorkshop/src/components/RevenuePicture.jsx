@@ -85,7 +85,7 @@ const sectionRef = useRef(null);
 
         <h1 className="smooth-scroll text-xl font-bold p-4 mt-4 md:text-2xl lg:text-3xl xl:text-3xl">
           {/* Just look a view how much they closed the deal */}
-          Just have a view at how much they closed the deal
+          Just have a look at  how much they closed the deal
         </h1>
         <br />
 

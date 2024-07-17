@@ -143,7 +143,7 @@ const GrowthIcons = () => {
             src="\rocket_11832367.png" 
             alt="growth icon 1" 
           />
-          <p className='text-center'>Choose five skills that align with your goals , weekly</p>
+          <p className='text-center'>Choose five skills that align with your weekly goals  </p>
         </div>
         
         <div className='flex flex-col items-center p-5 border-2 border-yellow-500 rounded-lg'>
