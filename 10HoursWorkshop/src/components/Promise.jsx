@@ -63,15 +63,15 @@ const Promise = () => {
         </div>
 
         <div className="p-4">
-          <h1 className="font-bold smooth-scroll">Dear Sir/Madam,</h1> <br />
+          <h1 className="font-bold smooth-scroll">Dear Sir/Madam ,</h1> <br />
           <p className="smooth-scroll md:text-xl">
             {" "}
             I am dedicated to supporting your business growth journey and
             sharing invaluable insights that have positively impacted over
             1,90,000+ individuals. Every attendee of my pieces of training
-            receives more value than they anticipated. If , for any reason, you
+            receives more value than they anticipated. If , for any reason , you
             attend my training and feel that you haven't gained the expected
-            value, I take full responsibility to make it the best experience in
+            value , I take full responsibility to make it the best experience in
             the industry. Therefore , I promise complete support and resonant
             activities throughout the training sessions. Simply email me at
             {/* px-2 */}

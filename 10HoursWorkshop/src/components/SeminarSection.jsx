@@ -121,7 +121,7 @@ const SeminarSection = () => {
       </div>
       </div>
       <p className="smooth-scroll p-3 md:p-3 ">
-     <b>Those Resistant to Adopting New Strategies : </b>If you're not open to learning new methods, this workshop isn't for you
+     <b>Those Resistant to Adopting New Strategies : </b>If you're not open to learning new methods , this workshop isn't for you
       </p>
     </div>
     <div className=" radius-yellow px-2 rounded-xl bg-gray flex items-center space-x-2 mt-2">
@@ -134,7 +134,7 @@ const SeminarSection = () => {
 </div>
       </div>
       <p className="smooth-scroll p-3 md:p-3">
-     <b>Non-Leaders :</b>Individuals who don't see themselves as leaders may not benefit from this training
+     <b>Non-Leaders : </b>Individuals who don't see themselves as leaders may not benefit from this training
       </p>
     </div>
 

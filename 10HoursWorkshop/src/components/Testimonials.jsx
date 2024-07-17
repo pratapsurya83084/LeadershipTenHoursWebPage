@@ -72,14 +72,14 @@ const SixTestimonials = () => {
                 Attending the 10+ hour coaching with Bishop Adhikari was a
                 game-changer for my business. The advanced techniques and
                 strategies I learned have significantly improved my sales
-                performance, leading to a 30% increase in revenue within just a
+                performance , leading to a 30% increase in revenue within just a
                 few months. I highly recommend this course to anyone looking to
                 boost their sales skills
               </p>
 
               <p className="mb-4 mx-2 bg-custom-gray radius-yellow rounded-xl mt-5 p-2 text-center font-normal text-gray-700 dark:text-gray-400">
                 <span className=" ">
-                  <b className="text-yellow-200"> Arun Deshmuk, India </b>
+                  <b className="text-yellow-200"> Arun Deshmuk , India </b>
                   <h5> Mehta Group of Industries</h5>
                 </span>
               </p>
@@ -96,14 +96,14 @@ const SixTestimonials = () => {
                 The 10+ hour coaching with Bishop Adhikari was incredibly
                 insightful. The practical strategies and hands-on exercises
                 helped me understand the nuances of effective negotiation. Since
-                attending, I've been able to close deals more confidently and
+                attending , I've been able to close deals more confidently and
                 efficiently. This course is a must for anyone serious about
                 improving their negotiation skills
               </p>
 
               <p className="bg-custom-gray mb-4 px-4 mx-2  radius-yellow rounded-xl mt-5 p-2 text-center font-normal text-gray-700 dark:text-gray-400">
                 <span className=" ">
-                  <b className="text-yellow-200">Keiko Tanaka, Japan</b>
+                  <b className="text-yellow-200">Keiko Tanaka , Japan</b>
                   <h5> Apparels Tanaka Trading Co</h5>
                 </span>
               </p>
@@ -123,7 +123,7 @@ const SixTestimonials = () => {
 
               <p className="mb-4 bg-custom-gray radius-yellow rounded-xl mt-5 p-2 text-center font-normal text-gray-700 dark:text-gray-400">
                 <span className=" ">
-                  <b className="text-yellow-200">Anita John, UK</b>
+                  <b className="text-yellow-200">Anita John , UK</b>
                   <h5> Smith & Co. Marketing</h5>
                 </span>
               </p>
@@ -146,7 +146,7 @@ const SixTestimonials = () => {
 
               <p className="mb-4 bg-custom-gray radius-yellow rounded-xl mt-5 p-2 text-center font-normal text-gray-700 dark:text-gray-400">
                 <span className=" ">
-                  <b className="text-yellow-200">Priya Kumari, India </b>
+                  <b className="text-yellow-200">Priya Kumari , India </b>
                   <h5>Goutam India Private Limited</h5>
                 </span>
               </p>
@@ -170,7 +170,7 @@ const SixTestimonials = () => {
 
               <p className="bg-custom-gray mb-3 radius-yellow rounded-xl mt-5 p-2 text-center font-normal text-gray-700 dark:text-gray-400">
                 <span className=" ">
-                  <b className="text-yellow-200"> David Johnson, Australia</b>
+                  <b className="text-yellow-200"> David Johnson , Australia</b>
                   <h5> Davjohn Design Co. Solutions</h5>
                 </span>
               </p>
@@ -194,7 +194,7 @@ const SixTestimonials = () => {
 
               <p className="bg-custom-gray mx-2 px-1 mb-4 radius-yellow rounded-xl mt-5 p-2 text-center font-normal text-gray-700 dark:text-gray-400">
                 <span className=" ">
-                  <b className="text-yellow-200"> Akira Nakamura, Japan</b>
+                  <b className="text-yellow-200"> Akira Nakamura , Japan</b>
                   <h5> Nakamura Holdings</h5>
                 </span>
               </p>
