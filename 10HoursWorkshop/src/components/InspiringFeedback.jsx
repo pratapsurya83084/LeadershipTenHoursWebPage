@@ -67,7 +67,7 @@ const InspiringFeedback = () => {
                   src="\ANKIT_KUMAR_img1.png"
                 />
                 <p className="leading-relaxed">
-                'I've had the privilege of attending over 100 workshops lead by
+                'I've had the privilege of attending over 100 workshops led by
                  Mr.Bishop  and I must say  his innovative ideas couldn't be more timely."
                 </p>
                 <span className="inline-block h-1 w-10 rounded bg-yellow-300 mt-6 mb-4"></span>
